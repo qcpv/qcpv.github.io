@@ -1113,8 +1113,8 @@ td, th {
   background: -webkit-linear-gradient(linear, left top, left bottom, from(rgba(117, 203, 231,0.95) 0%), to(rgba(19, 143, 194,0.95) 100%));
   background: linear-gradient(to bottom, rgba(117, 203, 231,0.95) 0%, rgba(19, 143, 194,0.95) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
-  /*opacity: 0.8;*/
-  z-index: -2;
+  /*opacity: 0.8;
+  z-index: -99;*/
 }
 
 
