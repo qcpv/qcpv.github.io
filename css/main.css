@@ -553,6 +553,7 @@ td, th {
 
 .section-full {
   padding: 150px 0;
+  position: relative;
 }
 
 .section-half {
@@ -1104,11 +1105,18 @@ td, th {
 }
 
 
-/*
+
 .banner-area {
-  background: url(../img/banner.jpg) no-repeat center center/cover;
+  /*background: url(../img/banner.jpg) no-repeat center center/cover;
+  background: #75cbe7;*/
+  background: -moz-linear-gradient(linear, left top, left bottom, from(rgba(117, 203, 231,0.95) 0%), to(rgba(19, 143, 194,0.95) 100%));
+  background: -webkit-linear-gradient(linear, left top, left bottom, from(rgba(117, 203, 231,0.95) 0%), to(rgba(19, 143, 194,0.95) 100%));
+  background: linear-gradient(to bottom, rgba(117, 203, 231,0.95) 0%, rgba(19, 143, 194,0.95) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
+  /*opacity: 0.8;*/
+  z-index: -2;
 }
-*/
+
 
 .bm-helper-back, .bm-helper-back-overlay, .bm-video-back, .bm-video-back video, .bm-video-back-overlay {
   position: absolute;
@@ -1120,7 +1128,7 @@ td, th {
 .bm-video-back {
   height: 100%;
   top: 0;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .bm-video-back video {
@@ -1165,6 +1173,31 @@ td, th {
   background: linear-gradient(to bottom, rgba(117, 203, 231,0.95) 0%, rgba(19, 143, 194,0.95) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
   opacity: 0.8;
+}
+
+
+/*overlay pictures*/
+/*background images*/
+.bg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-img .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .8;
+    background: #1C1D21;
 }
 
 .signle-service {
