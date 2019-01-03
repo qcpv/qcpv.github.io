@@ -1,4 +1,4 @@
-/*--------------------------- Color variations ----------------------*/
+single-item-transparent/*--------------------------- Color variations ----------------------*/
 /* Medium Layout: 1280px */
 /* Tablet Layout: 768px */
 /* Mobile Layout: 320px */
@@ -544,6 +544,11 @@ td, th {
   color: #fff;
 }
 
+.text-black-bold {
+  color: #000;
+  font-weight: bold
+}
+
 .transition {
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -791,7 +796,8 @@ td, th {
 .progressBar-circle,
 .progressBar-background {
   fill: none;
-  stroke: #777777;
+  /*stroke: #777777;*/
+  stroke: rgba(153, 51, 255,0.9);
   stroke-width: 5;
   stroke-linecap: round;
   stroke-dasharray: 0;
@@ -844,6 +850,8 @@ td, th {
   height: 150px;
   width: 150px;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .details-btn {
@@ -1115,6 +1123,7 @@ td, th {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
   /*opacity: 0.8;
   z-index: -99;*/
+  /*Note: using z-index parameter would case links inside this area not clickable*/
 }
 
 
@@ -1197,7 +1206,18 @@ td, th {
     right: 0;
     bottom: 0;
     opacity: .8;
-    background: #1C1D21;
+    background: #ffffff ;
+    /* #1C1D21 */
+}
+
+.bg-img .overlay-2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.8) ;
+    /* #1C1D21 */
 }
 
 .signle-service {
@@ -1221,12 +1241,12 @@ td, th {
   background: #222222;
 }
 
-.product-area-title {
+.technology-area-title {
   padding-bottom: 70px;
 }
 
 @media (max-width: 991px) {
-  .product-area-title h2 br {
+  .technology-area-title h2 br {
     display: none;
   }
 }
@@ -1332,7 +1352,19 @@ td, th {
 }
 
 .single-filter-content:hover .overlay-bg-content {
-  opacity: 1;
+  opacity: 0.8;
+}
+
+.single-filter-content.content-t1 {
+  background: url(../img/beautiful-sunrise-banjarmasin-1492545578.jpg) no-repeat center center/cover;
+}
+
+.single-filter-content.content-t2 {
+  background: url(../img/beautiful-sunrise-banjarmasin-1492545578.jpg) no-repeat center center/cover;
+}
+
+.single-filter-content.content-t3 {
+  background: url(../img/beautiful-sunrise-banjarmasin-1492545578.jpg) no-repeat center center/cover;
 }
 
 .single-filter-content.content-1 {
@@ -1479,52 +1511,86 @@ td, th {
   }
 }
 
-.single-pricing-table {
+.single-item-transparent {
   margin-top: 30px;
 }
 
-.single-pricing-table .top {
+.single-item-transparent .top {
+  /*
   background-image: -moz-linear-gradient(0deg, #3c408f 0%, #5b61cf 100%);
   background-image: -webkit-linear-gradient(0deg, #3c408f 0%, #5b61cf 100%);
   background-image: -ms-linear-gradient(0deg, #3c408f 0%, #5b61cf 100%);
+  */
+  background: rgba(200, 200, 200,0.5);
 }
 
-.single-pricing-table .top .head {
+.single-item-transparent .top>img{
+  max-width: 100%;
+  height: auto;
+  display: block !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.single-item-transparent .top .head {
   padding: 35px 20px;
 }
 
-.single-pricing-table .top .head span {
+.single-item-transparent .top .head span {
   font-size: 48px;
   color: #00ff8c;
 }
 
-.single-pricing-table .top .head h5 {
+.single-item-transparent .top .head h5 {
   margin-top: 20px;
 }
 
-.single-pricing-table .top .package {
+.single-item-transparent .top .package {
   padding: 30px 20px;
   background: rgba(0, 0, 0, 0.1);
 }
 
-.single-pricing-table .top .package .price {
+.single-item-transparent .top .package .price {
   color: #00ff8c;
   font-size: 36px;
   margin-bottom: 10px;
   line-height: 1em;
 }
 
-.single-pricing-table .bottom {
-  background: #f9f9ff;
+.single-item-transparent .bottom {
+  /*background: #f9f9ff;*/
+  /*background: rgba(249, 249, 255,0.2);*/
+  background: rgba(255, 255, 255,0.5);
+  /*opacity: 0.2;*/
+  /*background: inherit;*/
   padding: 35px 20px 50px 20px;
 }
 
-.single-pricing-table .bottom ul {
+.single-item-transparent .bottom ul {
   margin-bottom: 50px;
 }
 
-.single-pricing-table .bottom ul li {
+.single-item-transparent .bottom ul li {
   margin-top: 15px;
+}
+
+.single-item-transparent .icon span:hover{
+  /*color: #fff;*/
+  color: #ff33cc;
+}
+
+.single-item-transparent .icon {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.single-item-transparent .icon span {
+  font-size: 48px;
+  color: #00ff8c;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .active-testimonial-carousel .single-testimonial {
@@ -1626,13 +1692,13 @@ td, th {
   box-shadow: 0px 10px 20px 0px rgba(60, 64, 143, 0.2);
 }
 
-.cta-area {
+.quote-area {
   background: #3d4191;
   padding: 60px 0;
 }
 
 @media (max-width: 767px) {
-  .cta-area .primary-btn {
+  .quote-area .primary-btn {
     margin-top: 10px;
   }
 }

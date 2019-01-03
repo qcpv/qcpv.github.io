@@ -13,13 +13,13 @@ $(document).ready(function(){
  //        // Animate loader off screen
  //        $(".preloader").fadeOut("slow");;
  //    });
-	
+
 	$(".fullscreen").css("height", window_height)
 	$(".fitscreen").css("height", fitscreen);
 
     //-------- Active Sticky Js ----------//
      $(".sticky-header").sticky({topSpacing:0});
-     
+
      // -------   Active Mobile Menu-----//
 
      $(".mobile-btn").on('click', function(e){
@@ -33,7 +33,7 @@ $(document).ready(function(){
         $(".mobile-menu").slideUp();
         $(".mobile-btn span").toggleClass("lnr-menu lnr-cross");
     });
-     
+
 
     // $(function(){
     //     $('#Container').mixItUp();
@@ -51,10 +51,10 @@ $(document).ready(function(){
                   $('html, body').animate({
                     scrollTop: $(hash).offset().top - (-10)
                 }, 600, function(){
-                 
+
                     window.location.hash = hash;
                 });
-            } 
+            }
         });
 
     $('.active-testimonial-carousel').owlCarousel({
@@ -122,14 +122,14 @@ $(document).ready(function(){
         }, options);
 
         var $this = $(this);
-      
+
         var $progressBar = $this;
         var $progressCount = $progressBar.find('.progressBar-percentage-count');
         var $circle = $progressBar.find('.progressBar-circle');
         var percentageProgress = $progressBar.attr('data-progress');
         var percentageRemaining = (100 - percentageProgress);
         var percentageText = $progressCount.parent().attr('data-progress');
-      
+
         //Calcule la circonférence du cercle
         var radius = $circle.attr('r');
         var diameter = radius * 2;
@@ -142,7 +142,7 @@ $(document).ready(function(){
           'stroke-dasharray' : circumference,
           'stroke-dashoffset' : percentage
         })
-        
+
         //Animation de la barre de progression
         if(options.animate === true){
           $circle.css({
@@ -151,10 +151,10 @@ $(document).ready(function(){
             'stroke-dashoffset' : percentage
           }, 3000 )
         }
-        
+
         //Animation du texte (pourcentage)
         if(options.animateText == true){
- 
+
           $({ Counter: 0 }).animate(
             { Counter: percentageText },
             { duration: 3000,
@@ -166,28 +166,42 @@ $(document).ready(function(){
         }else{
           $progressCount.text( percentageText + '%');
         }
-      
+
     };
 
 })(jQuery);
 
 $(document).ready(function(){
-  
-  $('.progressBar--animateNone').bekeyProgressbar({
+
+  $('.progressBar--animateNone1').bekeyProgressbar({
     animate : false,
     animateText : false
   });
-  
+
+	$('.progressBar--animateNone2').bekeyProgressbar({
+    animate : false,
+    animateText : false
+  });
+
   $('.progressBar--animateCircle').bekeyProgressbar({
     animate : true,
     animateText : false
   });
-  
-  $('.progressBar--animateText').bekeyProgressbar({
+
+  $('.progressBar--animateText1').bekeyProgressbar({
     animate : false,
     animateText : true
   });
-  
+
+	$('.progressBar--animateText2').bekeyProgressbar({
+    animate : false,
+    animateText : true
+  });
+	$('.progressBar--animateText3').bekeyProgressbar({
+    animate : false,
+    animateText : true
+  });
+
   $('.progressBar--animateAll').bekeyProgressbar();
-  
+
 })
