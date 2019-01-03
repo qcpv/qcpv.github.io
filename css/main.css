@@ -981,6 +981,7 @@ td, th {
     position: absolute;
     top: 0;
     right: 0;
+    vertical-align: baseline;
   }
 }
 
