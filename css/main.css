@@ -1366,47 +1366,50 @@ td, th {
 }
 
 .single-filter-content.content-t1 {
-  background: url(../img/beautiful-sunrise-banjarmasin-1492545578.jpg) no-repeat center center/cover;
+  background: url(../img/t1.png) no-repeat center center/cover;
+  background-size:100% auto;/*この場合は高さが自動設定*/
 }
 
 .single-filter-content.content-t2 {
-  background: url(../img/beautiful-sunrise-banjarmasin-1492545578.jpg) no-repeat center center/cover;
+  background: url(../img/t2.jpg) no-repeat center center/cover;
+  background-size:100% auto;/*この場合は高さが自動設定*/
 }
 
 .single-filter-content.content-t3 {
-  background: url(../img/beautiful-sunrise-banjarmasin-1492545578.jpg) no-repeat center center/cover;
+  background: url(../img/int.jpg) no-repeat center center/cover;
+  background-size:100% auto;/*この場合は高さが自動設定*/
 }
 
 .single-filter-content.content-1 {
-  background: url(../img/c1.jpg) no-repeat center center/cover;
+  background: url(../img/iBuilding1.jpg) no-repeat center center/cover;
 }
 
 .single-filter-content.content-2 {
-  background: url(../img/c2.jpg) no-repeat center center/cover;
+  background: url(../img/iBuilding2.jpg) no-repeat center center/cover;
 }
 
 .single-filter-content.content-3 {
-  background: url(../img/c3.jpg) no-repeat center center/cover;
+  background: url(../img/multi1.jpg) no-repeat center center/cover;
 }
 
 .single-filter-content.content-4 {
-  background: url(../img/c4.jpg) no-repeat center center/cover;
+  background: url(../img/multi2.jpg) no-repeat center center/cover;
 }
 
 .single-filter-content.content-5 {
-  background: url(../img/c5.jpg) no-repeat center center/cover;
+  background: url(../img/many1.jpg) no-repeat center center/cover;
 }
 
 .single-filter-content.content-6 {
-  background: url(../img/c6.jpg) no-repeat center center/cover;
+  background: url(../img/Chlorophyll.jpg) no-repeat center center/cover;
 }
 
 .single-filter-content.content-7 {
-  background: url(../img/c7.jpg) no-repeat center center/cover;
+  background: url(../img/charging-stand.jpg) no-repeat center center/cover;
 }
 
 .single-filter-content.content-8 {
-  background: url(../img/c8.jpg) no-repeat center center/cover;
+  background: url(../img/film.png) no-repeat center center/cover;
 }
 
 .single-member {
@@ -1570,7 +1573,10 @@ td, th {
 .single-item-transparent .bottom {
   /*background: #f9f9ff;*/
   /*background: rgba(249, 249, 255,0.2);*/
-  background: rgba(255, 255, 255,0.5);
+  /*background: rgba(255, 255, 255,0.5);*/
+  background: -moz-linear-gradient(linear, top, bottom, from(rgba(255, 255, 255,0.7) 0%), to(rgba(255, 255, 255,0) 100%));
+  background: -webkit-linear-gradient(linear, top, bottom, from(rgba(255, 255, 255,0.7) 0%), to(rgba(255, 255, 255,0) 100%));
+  background: linear-gradient(to bottom, rgba(255, 255, 255,0.7) 0%, rgba(255, 255, 255,0) 100%);
   /*opacity: 0.2;*/
   /*background: inherit;*/
   padding: 35px 20px 50px 20px;
@@ -1586,7 +1592,7 @@ td, th {
 
 .single-item-transparent .icon span:hover{
   /*color: #fff;*/
-  color: #ff33cc;
+  color: #ff0000;
 }
 
 .single-item-transparent .icon {
@@ -1596,7 +1602,8 @@ td, th {
 
 .single-item-transparent .icon span {
   font-size: 48px;
-  color: #00ff8c;
+  /*#00ff8c*/
+  color: #ff6600;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
