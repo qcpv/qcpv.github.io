@@ -1170,6 +1170,15 @@ td, th {
 }
 
 
+@media only screen
+  and (max-device-width: 667px) {
+    .bm-video-back
+    {
+        display: none;
+    }
+}
+
+
 .banner-area .overlay-bg {
 /*
   background: -moz-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
