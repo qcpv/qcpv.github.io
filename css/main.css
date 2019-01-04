@@ -1410,6 +1410,7 @@ td, th {
 
 .single-filter-content.content-8 {
   background: url(../img/film.png) no-repeat center center/cover;
+  background-size:auto 100%;/*full height*/
 }
 
 .single-member {
@@ -1592,7 +1593,7 @@ td, th {
 
 .single-item-transparent .icon span:hover{
   /*color: #fff;*/
-  color: #ff0000;
+  color: #ff6600;
 }
 
 .single-item-transparent .icon {
@@ -1603,7 +1604,7 @@ td, th {
 .single-item-transparent .icon span {
   font-size: 48px;
   /*#00ff8c*/
-  color: #ff6600;
+  color: #00ffff;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
