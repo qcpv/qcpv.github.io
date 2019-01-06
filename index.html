@@ -76,20 +76,20 @@
 								<li><a href="#technology" tkey="menu:technology">Technology</a></li>
 								<li><a href="#performance" tkey="menu:performance">Performance</a></li>
 								<li><a href="#products" tkey="menu:products">Products</a></li>
-								<li><a href="#contact" tkey="menu:contacts">Contact</a></li>
+								<li><a href="#contact" tkey="menu:contacts">Contacts</a></li>
 							</ul>
 							<a href="#" class="mobile-btn"><span class="lnr lnr-menu"></span></a>
 						</nav>
-						<div class="search relative dropdown">
+						<div class="search relative">
 							<!--class="btn dropdown-toggle"-->
-							<button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<button class="btn lang-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<span class="fas fa-globe"></span>
 							</button>
-							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-								<a class="dropdown-item" onClick="choose('en')">English</a>
-								<a class="dropdown-item" onClick="choose('jp')">日本語</a>
-								<a class="dropdown-item" onClick="choose('cn')">简体中文</a>
-								<a class="dropdown-item" onClick="choose('fr')">Français</a>
+							<div class="dropdown-menu lang-menu" aria-labelledby="dropdownMenuButton">
+								<button type="button" class="dropdown-item" onClick="choose('en')">English</button>
+								<button type="button" class="dropdown-item" onClick="choose('jp')">日本語</button>
+								<button type="button" class="dropdown-item" onClick="choose('cn')">简体中文</button>
+								<button type="button" class="dropdown-item" onClick="choose('fr')">Français</button>
 							</div>
 						</div>
 					</div>
@@ -249,7 +249,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-8 no-flex-xs justify-content-between align-items-center text-center text-white">
 					<blockquote class="blockquote">
-						<p class="mb-0" tkey="quote2:after-tech" >Decoupling renewable energy from being intermittent and uneconomical.</p>
+						<p class="mb-0" tkey="quote2:after-tech">Decoupling renewable energy from being intermittent and uneconomical.</p>
 						<!--<footer class="blockquote-footer" style="background-color:inherit; color:inherit"><cite title="Source Title">Me</cite></footer>-->
 					</blockquote>
 				</div>
@@ -380,9 +380,8 @@
 			</div>
 		</div>
 
-
-
-		<div id="filter-content" class="row no-gutters mt-70">
+		<!--id="filter-content"-->
+		<div class="row no-gutters mt-70">
 			<div class="mix category-1 col-lg-3 col-md-4 col-sm-6 single-filter-content content-1" data-myorder="1">
 				<div class="overlay overlay-bg-content d-flex align-items-center justify-content-center flex-column">
 					<p class="text-white" tkey="products:item1:text">External tilings function as power supplier</p>
@@ -482,10 +481,10 @@
 							<div class="address mt-20">
 								<h6 class="text-uppercase mb-15" tkey="contacts:column1:title">Headquarters</h6>
 								<p tkey="contacts:column1:text">
-								D-705, International Business building
-								<br>Guomao Avenue
-								<br>Haikou, Hainan Province
-								<br>China
+									D-705, International Business building
+									<br>Guomao Avenue
+									<br>Haikou, Hainan Province
+									<br>China
 								</p>
 							</div>
 						</div>
@@ -493,8 +492,8 @@
 							<div class="address mt-20">
 								<h6 class="text-uppercase mb-15" tkey="contacts:column2:title">Japan Liaison Office</h6>
 								<p tkey="contacts:column2:text">
-								Kyoto, Kyoto Prefecture<br>
-								Japan
+									Kyoto, Kyoto Prefecture<br>
+									Japan
 								</p>
 							</div>
 						</div>
@@ -506,10 +505,10 @@
 							<div class="address mt-20">
 								<h6 class="text-uppercase mb-15" tkey="contacts:column3:title">Mobile</h6>
 								<p tkey="contacts:column3:text">
-								China: <a href="tel:008613976860298">+86-139-7686-0298</a>
-								<br>
-								Japan: <a href="tel:00817041156337">+81-70-4115-6337</a>
-							</p>
+									China: <a href="tel:008613976860298">+86-139-7686-0298</a>
+									<br>
+									Japan: <a href="tel:00817041156337">+81-70-4115-6337</a>
+								</p>
 							</div>
 						</div>
 						<div class="col-sm-6">
@@ -544,7 +543,7 @@
 	<script src="js/jquery.ajaxchimp.min.js"></script>
 	<script src="js/jquery.sticky.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.js"></script>
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.js"></script>-->
 	<script src="js/main.js"></script>
 	<script src="js/lang.js"></script>
 </body>
