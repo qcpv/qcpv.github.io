@@ -44,7 +44,7 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>qCPV Solar Panel</title>
+	<title tkey="title">qCPV Solar Panel</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
 	<!--
@@ -72,16 +72,25 @@
 					<div class="right-bar d-flex align-items-center">
 						<nav class="d-flex align-items-center">
 							<ul class="main-menu">
-								<li><a href="#top">About</a></li>
-								<li><a href="#technology">Technology</a></li>
-								<li><a href="#performance">Performance</a></li>
-								<li><a href="#products">Products</a></li>
-								<li><a href="#contact">Contact</a></li>
+								<li><a href="#top" tkey="menu:about">About</a></li>
+								<li><a href="#technology" tkey="menu:technology">Technology</a></li>
+								<li><a href="#performance" tkey="menu:performance">Performance</a></li>
+								<li><a href="#products" tkey="menu:products">Products</a></li>
+								<li><a href="#contact" tkey="menu:contacts">Contact</a></li>
 							</ul>
 							<a href="#" class="mobile-btn"><span class="lnr lnr-menu"></span></a>
 						</nav>
-						<div class="search relative">
-							<span class="fas fa-globe"></span>
+						<div class="search relative dropdown">
+							<!--class="btn dropdown-toggle"-->
+							<button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="fas fa-globe"></span>
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" onClick="choose('en')">English</a>
+								<a class="dropdown-item" onClick="choose('jp')">日本語</a>
+								<a class="dropdown-item" onClick="choose('cn')">简体中文</a>
+								<a class="dropdown-item" onClick="choose('fr')">Français</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -107,9 +116,9 @@
 			<div class="row fullscreen justify-content-center align-items-center">
 				<div class="col-lg-8">
 					<div class="banner-content text-center">
-						<p class="text-white">All-weather, economical, intelligent solar panel</p>
-						<h1 class="text-uppercase text-white">Welcome to the Future of Energy</h1>
-						<a href="brochure.pdf" download="Technology Breifing" target="_blank" class="primary-btn banner-btn">Download our brochure</a>
+						<p class="text-white" tkey="banner:slogan-sub">All-weather, economical, intelligent solar panel</p>
+						<h1 class="text-uppercase text-white" tkey="banner:slogan-main">Welcome to the Future of Energy</h1>
+						<a href="brochure.pdf" download="Technology Breifing" target="_blank" class="primary-btn banner-btn" tkey="banner:download">Download our brochure</a>
 					</div>
 				</div>
 			</div>
@@ -122,15 +131,15 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-8 no-flex-xs justify-content-between align-items-center text-center text-white">
 					<blockquote class="blockquote">
-						<p class="mb-0">...currently expected technology advances alone would not deliver the carbon reductions needed for a ‘two-degree world’.</p>
-						<footer class="blockquote-footer" style="background-color:inherit; color:inherit"><cite title="Source Title">BP Technology Outlook 2018</cite></footer>
+						<p class="mb-0" tkey="quote1:moti:content">...currently expected technology advances alone would not deliver the carbon reductions needed for a ‘two-degree world’.</p>
+						<footer class="blockquote-footer" style="background-color:inherit; color:inherit"><cite title="Source Title" tkey="quote1:moti:source">BP Technology Outlook 2018</cite></footer>
 					</blockquote>
 				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row justify-content-center">
-				<h2 class="text-uppercase text-white text-center">Meet Our Unexpected Technology</h2>
+				<h2 class="text-uppercase text-white text-center" tkey="quote1:moti:slogan">Meet Our Unexpected Technology</h2>
 			</div>
 			<!--
 			<div class="row justify-content-center">
@@ -152,8 +161,8 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-8">
 					<div class="technology-area-title text-center">
-						<p class="text-uppercase">Technology</p>
-						<h2 class="h1">Wave Vector Reconstruction</h2>
+						<p class="text-uppercase" tkey="technology:subtitle">Technology</p>
+						<h2 class="h1" tkey="technology:title">Wave Vector Reconstruction</h2>
 					</div>
 				</div>
 			</div>
@@ -173,20 +182,20 @@
 							<div class="icon">
 								<span class="fas fa-cloud-sun-rain"></span>
 							</div>
-							<h4>All-weather</h4>
+							<h4 tkey="technology:column1:title">All-weather</h4>
 							<ul class="feature text-center">
 								<!--あなたのエネルギーの供給を守ります-->
 								<li></li>
-								<li>Diffuse light of all colours are welcome</li>
-								<li>Photons modulated before touching the solar cell</li>
-								<li>Reliable and Stable output during heavily rainy days</li>
-								<li>Still larger output during sunny times </li>
-								<li>See a comparison with market solar panels:</li>
+								<li tkey="technology:column1:item1">Diffuse light of all colours are welcome</li>
+								<li tkey="technology:column1:item2">Photons modulated before touching the solar cell</li>
+								<li tkey="technology:column1:item3">Reliable and Stable output during heavily rainy days</li>
+								<li tkey="technology:column1:item4">Still larger output during sunny times </li>
+								<li tkey="technology:column1:item5">See a comparison with market solar panels:</li>
 								<li>
-									in a <a href="" >sunny day</a>
+									in a <a href="" tkey="technology:column1:item5:sunny">sunny day</a>
 								</li>
 								<li>
-										in a <a href="" >rainy day</a>
+									in a <a href="" tkey="technology:column1:item5:rainy">rainy day</a>
 								</li>
 							</ul>
 						</div>
@@ -200,14 +209,14 @@
 							<div class="icon">
 								<span class="fas fa-hand-holding-usd"></span>
 							</div>
-							<h4>Economical</h4>
+							<h4 tkey="technology:column2:title">Economical</h4>
 							<ul class="feature text-center">
-								<li>Hugely reduce the amount of expensive solar cells needed</li>
-								<li>Environmental-friendly production process</li>
-								<li>Shift down the frequency of ultra-violet light</li>
-								<li>Protects lattice structures of solar cells</li>
-								<li>Incredible low cost</li>
-								<li>Multi-functional</li>
+								<li tkey="technology:column2:item1">Hugely reduce the amount of expensive solar cells needed</li>
+								<li tkey="technology:column2:item2">Environmental-friendly production process</li>
+								<li tkey="technology:column2:item3">Shift down the frequency of ultra-violet light</li>
+								<li tkey="technology:column2:item4">Protects lattice structures of solar cells</li>
+								<li tkey="technology:column2:item5">Incredible low cost</li>
+								<li tkey="technology:column2:item6">Multi-functional</li>
 							</ul>
 						</div>
 					</div>
@@ -220,12 +229,12 @@
 							<div class="icon">
 								<span class="fas fa-hat-wizard"></span>
 							</div>
-							<h4>Intelligent</h4>
+							<h4 tkey="technology:column3:title">Intelligent</h4>
 							<ul class="feature text-center">
-								<li>Embedded customizable</li>
-								<li>Building blocks of intelligent building</li>
-								<li>Real-time data for comprehensive protection</li>
-								<li>Integration with other fancy services</li>
+								<li tkey="technology:column3:item1">Embedded customizable</li>
+								<li tkey="technology:column3:item2">Building blocks of intelligent building</li>
+								<li tkey="technology:column3:item3">Real-time data for comprehensive protection</li>
+								<li tkey="technology:column3:item4">Integration with other fancy services</li>
 							</ul>
 						</div>
 					</div>
@@ -240,7 +249,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-8 no-flex-xs justify-content-between align-items-center text-center text-white">
 					<blockquote class="blockquote">
-						<p class="mb-0">Decoupling renewable energy from being intermittent and uneconomical.</p>
+						<p class="mb-0" tkey="quote2:after-tech" >Decoupling renewable energy from being intermittent and uneconomical.</p>
 						<!--<footer class="blockquote-footer" style="background-color:inherit; color:inherit"><cite title="Source Title">Me</cite></footer>-->
 					</blockquote>
 				</div>
@@ -259,8 +268,8 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-8">
 					<div class="technology-area-title text-center">
-						<p class="text-uppercase">Performance</p>
-						<h2 class="h1">Selection of Key Values</h2>
+						<p class="text-uppercase" tkey="performance:subtitle">Performance</p>
+						<h2 class="h1" tkey="performance:title">Selection of Key Values</h2>
 					</div>
 				</div>
 			</div>
@@ -278,7 +287,7 @@
 								<span class="progressBar-percentage progressBar-percentage-count"></span>
 							</div>
 						</div>
-						<h4 class="text-center">Energy conversion efficiency during heavy rain</h4>
+						<h4 class="text-center" tkey="performance:chart1:text">Energy conversion efficiency during heavy rain</h4>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6 d-flex justify-content-center">
@@ -292,7 +301,7 @@
 								<span class="progressBar-percentage progressBar-percentage-count"></span>
 							</div>
 						</div>
-						<h4 class="text-center">Standard-condition efficiency</h4>
+						<h4 class="text-center" tkey="performance:chart2:text">Energy conversion efficiency during heavy rain>Standard-condition efficiency</h4>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6 d-flex justify-content-center">
@@ -303,10 +312,10 @@
 									<circle transform="rotate(-90, 100, 100)" class="progressBar-background" cx="100" cy="100" r="95" />
 									<circle transform="rotate(-90, 100, 100)" class="progressBar-circle" cx="100" cy="100" r="95" />
 								</svg>
-								<span class="progressBar-percentage">4.1 yen/kwH</span>
+								<span class="progressBar-percentage" tkey="performance:chart3:value">4.1 yen/kwH</span>
 							</div>
 						</div>
-						<h4 class="text-center">Annually average cost in Kyoto(battery included)*</h4>
+						<h4 class="text-center" tkey="performance:chart3:text">Annually average cost in Kyoto(battery included)*</h4>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6 d-flex justify-content-center">
@@ -320,11 +329,11 @@
 								<span class="progressBar-percentage progressBar-percentage-count"></span>
 							</div>
 						</div>
-						<h4 class="text-center">Inner quantum efficiency</p>
+						<h4 class="text-center" tkey="performance:chart4:text">Inner quantum efficiency</p>
 					</div>
 				</div>
 			</div>
-			<p>
+			<p tkey="performance:chart1:footnote">
 				* :cost of electricity in Japan per 2014 (yen/kWh):
 				<br />
 				Nuclear energy: 10.1;
@@ -340,8 +349,8 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-8 no-flex-xs justify-content-between align-items-center text-center text-white">
 					<blockquote class="blockquote">
-						<p class="mb-0">One man’s magic is another man’s engineering.</p>
-						<footer class="blockquote-footer" style="background-color:inherit; color:inherit"><cite title="Source Title">Robert Heinlein</cite></footer>
+						<p class="mb-0" tkey="quote3:after-perf:content">One man’s magic is another man’s engineering.</p>
+						<footer class="blockquote-footer" style="background-color:inherit; color:inherit"><cite title="Source Title" tkey="quote3:after-perf:source">Robert Heinlein</cite></footer>
 					</blockquote>
 				</div>
 			</div>
@@ -359,8 +368,8 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-8">
 					<div class="technology-area-title text-center">
-						<p class="text-uppercase">Products</p>
-						<h2 class="h1">A Peek into the Near Future</h2>
+						<p class="text-uppercase" tkey="products:subtitle">Products</p>
+						<h2 class="h1" tkey="products:title">A Peek into the Near Future</h2>
 					</div>
 				</div>
 			</div>
@@ -376,59 +385,59 @@
 		<div id="filter-content" class="row no-gutters mt-70">
 			<div class="mix category-1 col-lg-3 col-md-4 col-sm-6 single-filter-content content-1" data-myorder="1">
 				<div class="overlay overlay-bg-content d-flex align-items-center justify-content-center flex-column">
-					<p class="text-white">External tilings function as power supplier</p>
+					<p class="text-white" tkey="products:item1:text">External tilings function as power supplier</p>
 					<div class="line"></div>
-					<h5 class="text-white text-uppercase">Intelligent Building</h5>
+					<h5 class="text-white text-uppercase" tkey="products:item1:title">Intelligent Building</h5>
 				</div>
 			</div>
 			<div class="mix category-1 category-5 category-3 category-5 col-lg-3 col-md-4 col-sm-6 single-filter-content content-2" data-myorder="2">
 				<div class="overlay overlay-bg-content d-flex align-items-center justify-content-center flex-column">
-					<p class="text-white">Deep integration with IoT</p>
+					<p class="text-white" tkey="products:item2:text">Deep integration with IoT</p>
 					<div class="line"></div>
-					<h5 class="text-white text-uppercase">Intelligent Building</h5>
+					<h5 class="text-white text-uppercase" tkey="products:item2:title">Intelligent Building</h5>
 				</div>
 			</div>
 			<div class="mix category-1 category-5 col-lg-3 col-md-4 col-sm-6 single-filter-content content-3" data-myorder="3">
 				<div class="overlay overlay-bg-content d-flex align-items-center justify-content-center flex-column">
-					<p class="text-white">Better overall performance than multi-junction solar cells.
+					<p class="text-white" tkey="products:item3:text">Better overall performance than multi-junction solar cells.
 						And say goodbye to exorbitant fabrication techniques</p>
 					<div class="line"></div>
-					<h5 class="text-white text-uppercase">Multi-layer solar cell</h5>
+					<h5 class="text-white text-uppercase" tkey="products:item3:title">Multi-layer solar cell</h5>
 				</div>
 			</div>
 			<div class="mix category-2 category-3 category-6 col-lg-3 col-md-4 col-sm-6 single-filter-content content-4" data-myorder="4">
 				<div class="overlay overlay-bg-content d-flex align-items-center justify-content-center flex-column">
-					<p class="text-white">No more annoyance with lattice-matching</p>
+					<p class="text-white" tkey="products:item4:text">No more annoyance with lattice-matching</p>
 					<div class="line"></div>
-					<h5 class="text-white text-uppercase">Multi-layer solar cell</h5>
+					<h5 class="text-white text-uppercase" tkey="products:item4:title">Multi-layer solar cell</h5>
 				</div>
 			</div>
 			<div class="mix category-1 category-4 category-5 col-lg-3 col-md-4 col-sm-6 single-filter-content content-5" data-myorder="5">
 				<div class="overlay overlay-bg-content d-flex align-items-center justify-content-center flex-column">
-					<p class="text-white">Solar cells made colorful and fun</p>
+					<p class="text-white" tkey="products:item5:text">Solar cells made colorful and fun</p>
 					<div class="line"></div>
-					<h5 class="text-white text-uppercase">Customizable size and frequency</h5>
+					<h5 class="text-white text-uppercase" tkey="products:item5:title">Customizable size and frequency</h5>
 				</div>
 			</div>
 			<div class="mix category-1 category-3 category-5 category-6 col-lg-3 col-md-4 col-sm-6 single-filter-content content-6" data-myorder="6">
 				<div class="overlay overlay-bg-content d-flex align-items-center justify-content-center flex-column">
-					<p class="text-white">Let's try to mimic the absorption spectrum of a chlorophyll</p>
+					<p class="text-white" tkey="products:item6:text">Let's try to mimic the absorption spectrum of a chlorophyll</p>
 					<div class="line"></div>
-					<h5 class="text-white text-uppercase">Some magic liquid</h5>
+					<h5 class="text-white text-uppercase" tkey="products:item6:title">Some magic liquid</h5>
 				</div>
 			</div>
 			<div class="mix category-2 category-4 category-3 col-lg-3 col-md-4 col-sm-6 single-filter-content content-7" data-myorder="7">
 				<div class="overlay overlay-bg-content d-flex align-items-center justify-content-center flex-column">
-					<p class="text-white">Any shape you want. No need to towards the sun</p>
+					<p class="text-white" tkey="products:item7:text">Any shape you want. No need to towards the sun</p>
 					<div class="line"></div>
-					<h5 class="text-white text-uppercase">Electric recharging point</h5>
+					<h5 class="text-white text-uppercase" tkey="products:item7:title">Electric recharging point</h5>
 				</div>
 			</div>
 			<div class="mix category-2 category-6 category-5 col-lg-3 col-md-4 col-sm-6 single-filter-content content-8" data-myorder="8">
 				<div class="overlay overlay-bg-content d-flex align-items-center justify-content-center flex-column">
-					<p class="text-white">Especially for deployed solar power plants</p>
+					<p class="text-white" tkey="products:item8:text">Especially for deployed solar power plants</p>
 					<div class="line"></div>
-					<h5 class="text-white text-uppercase">Solar cell efficiency enhancing film</h5>
+					<h5 class="text-white text-uppercase" tkey="products:item8:title">Solar cell efficiency enhancing film</h5>
 				</div>
 			</div>
 		</div>
@@ -440,17 +449,17 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-8 no-flex-xs justify-content-between align-items-center text-center text-white">
 					<blockquote class="blockquote">
-						<p class="mb-0">
+						<p class="mb-0" tkey="quote4:after-prod:content">
 							Even though the future seems far away, it is actually beginning right now.
 						</p>
-						<footer class="blockquote-footer" style="background-color:inherit; color:inherit"><cite title="Source Title">Mattie Stepanek</cite></footer>
+						<footer class="blockquote-footer" style="background-color:inherit; color:inherit"><cite title="Source Title" tkey="quote4:after-prod:source">Mattie Stepanek</cite></footer>
 					</blockquote>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- End Quote Area -->
-	<!-- Start Contact Area -->
+	<!-- Start Contacts Area -->
 	<section id="contact" class="section-full">
 		<!-- Background Image-->
 		<div class="bg-img" style="background-image: url('./img/UNADJUSTEDNONRAW_thumb_13a2.jpg');">
@@ -461,8 +470,8 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-8">
 					<div class="technology-area-title text-center">
-						<p class="text-uppercase">Get connected</p>
-						<h2 class="h1">Contact Us</h2>
+						<p class="text-uppercase" tkey="contacts:subtitle">Get connected</p>
+						<h2 class="h1" tkey="contacts:title">Contact Us</h2>
 					</div>
 				</div>
 			</div>
@@ -471,14 +480,22 @@
 					<div class="row">
 						<div class="col-sm-6">
 							<div class="address mt-20">
-								<h6 class="text-uppercase mb-15">China</h6>
-								<p>Haikou<br> Hainan Province</p>
+								<h6 class="text-uppercase mb-15" tkey="contacts:column1:title">Headquarters</h6>
+								<p tkey="contacts:column1:text">
+								D-705, International Business building
+								<br>Guomao Avenue
+								<br>Haikou, Hainan Province
+								<br>China
+								</p>
 							</div>
 						</div>
 						<div class="col-sm-6">
 							<div class="address mt-20">
-								<h6 class="text-uppercase mb-15">Mobile</h6>
-								<a href="tel:008613976860298">+86-139-7686-0298</a>
+								<h6 class="text-uppercase mb-15" tkey="contacts:column2:title">Japan Liaison Office</h6>
+								<p tkey="contacts:column2:text">
+								Kyoto, Kyoto Prefecture<br>
+								Japan
+								</p>
 							</div>
 						</div>
 					</div>
@@ -487,13 +504,17 @@
 					<div class="row">
 						<div class="col-sm-6">
 							<div class="address mt-20">
-								<h6 class="text-uppercase mb-15">Japan</h6>
-								<p>Kyoto<br> Kyoto Prefecture</p>
+								<h6 class="text-uppercase mb-15" tkey="contacts:column3:title">Mobile</h6>
+								<p tkey="contacts:column3:text">
+								China: <a href="tel:008613976860298">+86-139-7686-0298</a>
+								<br>
+								Japan: <a href="tel:00817041156337">+81-70-4115-6337</a>
+							</p>
 							</div>
 						</div>
 						<div class="col-sm-6">
 							<div class="address mt-20">
-								<h6 class="text-uppercase mb-15">E-mail</h6>
+								<h6 class="text-uppercase mb-15" tkey="contacts:column4:title">E-mail</h6>
 								<a href="mailto:chenguang.xu@quantumcpv.com">chenguang.xu@quantumcpv.com</a>
 							</div>
 						</div>
@@ -502,7 +523,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- End Contact Area -->
+	<!-- End Contacts Area -->
 	<!-- Start Footer Area -->
 	<!-- to change the color of the background of the footer,
 	search for 'footer {' in main.css -->
@@ -525,6 +546,7 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/lang.js"></script>
 </body>
 
 </html>
