@@ -57,6 +57,7 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -99,19 +100,8 @@
 	</header>
 	<!-- End Header Area -->
 	<!-- Start Banner Area -->
-	<section class="banner-area relative">
-		<!--
-		<div class="overlay overlay-bg"></div>
-	-->
-		<div class="bm-video-back">
-			<video playsinline="true" loop="true" autoplay="true" muted="true">
-				<source src="videos/SolarEnergy-922.mp4" />
-				<!--
-				<img src="img/Zepper-sunrise-over-the-niveous-city-of-bonn.jpg" alt="">
-			-->
-			</video>
-			<div class="bm-video-back-overlay" style="background: rgba(0, 0, 0, 0.3);"></div>
-		</div>
+	<section id="banner" class="banner-area relative">
+		<!--will add an video playing element if width > 767 px-->
 		<div class="container">
 			<div class="row fullscreen justify-content-center align-items-center">
 				<div class="col-lg-8">
@@ -124,6 +114,29 @@
 			</div>
 		</div>
 	</section>
+	<script>
+		$(function() {
+			if ($(window).width() > 767) {
+				var videoele="<div id='opening' class='bm-video-back'></div>";
+				var videofile="<video playsinline='true' loop='true' autoplay='true' muted='true'>\
+					<source src='videos/SolarEnergy-922.mp4' /></video>";
+				var videooverlay="<div class='bm-video-back-overlay' style='background: rgba(0, 0, 0, 0.3);'></div>";
+				/*
+					"<div class='bm-video-back'>\
+						<video playsinline='true' loop='true' autoplay='true' muted='true'>\
+							<source src='videos/SolarEnergy-922.mp4' />\
+						</video>\
+						<div class='bm-video-back-overlay' style='background: rgba(0, 0, 0, 0.3);'>\
+						</div>\
+					</div>";
+					*/
+				$("#banner").prepend(videoele);
+				$("#opening").append(videofile);
+				$("#opening").append(videooverlay);
+				/*console.log('test@video');*/
+			}
+		});
+	</script>
 	<!-- End Banner Area -->
 	<!-- Start Motivation Area -->
 	<section class="quote-area">
