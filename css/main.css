@@ -932,7 +932,7 @@ td, th {
   color: rgba(255, 255, 255, 0.9);
   margin: 0 20px;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 @media (max-width: 991px) {
@@ -958,6 +958,10 @@ td, th {
   right: 0;
   background: rgba(19, 143, 194,0.9);
   padding: 30px 20px;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: transparent !important;
 }
 
 @media (max-width: 767px) {
