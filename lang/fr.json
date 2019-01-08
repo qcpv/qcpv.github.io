@@ -19,8 +19,8 @@
   "technology:column1:item3": "Sortie fiable et stable pendant les jours de forte pluie",
   "technology:column1:item4": "Encore plus grand rendement pendant les périodes ensoleillées",
   "technology:column1:item5": "Voir une comparaison avec les panneaux solaires du marché:",
-  "technology:column1:item5:sunny": "journée ensoleillée",
-  "technology:column1:item5:rainy": "Jour de pluie",
+  "technology:column1:item5:sunny": "<a href='' >un jour ensoleillé</a>",
+  "technology:column1:item5:rainy": "<a href='' >un jour pluvieux</a>",
   "technology:column2:title": "Économique",
   "technology:column2:item1": "Réduire énormément la quantité de cellules solaires coûteuses nécessaires",
   "technology:column2:item2": "Processus de production respectueux de l'environnement",
@@ -78,5 +78,6 @@
   "contacts:column3:text": ["Chine: ", "<a href='tel:008613976860298'>+86-139-7686-0298</a><br>",
     "Japon: ", "<a href='tel:00817041156337'>+81-70-4115-6337</a>"
   ],
-  "contacts:column4:title": "E-mail"
+  "contacts:column4:title": "E-mail",
+  "copyright:text1": "Copyright &copy; 2019 Hainan Putian Solar Energy Construction Co.,Ltd. Tous les droits sont réservés."
 }
