@@ -75,9 +75,7 @@
   "contacts:column2:title": "Bureau de liaison avec le Japon",
   "contacts:column2:text": ["Kyoto, Kyoto Prefecture<br>", "Japon"],
   "contacts:column3:title": "Mobile",
-  "contacts:column3:text": ["Chine: ", "<a href='tel:008613976860298'>+86-139-7686-0298</a><br>",
-    "Japon: ", "<a href='tel:00817041156337'>+81-70-4115-6337</a>"
-  ],
+  "contacts:column3:text": ["Japon: ", "<a href='tel:00817041156337'>+81-70-4115-6337</a>"],
   "contacts:column4:title": "E-mail",
   "copyright:text1": "Copyright &copy; 2019 Hainan Putian Solar Energy Construction Co.,Ltd. Tous les droits sont réservés."
 }

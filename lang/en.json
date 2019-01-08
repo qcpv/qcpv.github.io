@@ -78,8 +78,6 @@
   "contacts:column2:title": "Japan Liaison Office",
   "contacts:column2:text": ["Kyoto, Kyoto Prefecture<br>", "Japan"],
   "contacts:column3:title": "Mobile",
-  "contacts:column3:text": ["China: ", "<a href='tel:008613976860298'>+86-139-7686-0298</a><br>",
-    "Japan: ", "<a href='tel:00817041156337'>+81-70-4115-6337</a>"
-  ],
+  "contacts:column3:text": ["Japan: ", "<a href='tel:00817041156337'>+81-70-4115-6337</a>"],
   "contacts:column4:title": "E-mail"
 }
