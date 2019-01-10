@@ -15,23 +15,23 @@ if (langCode==null) {
   //substr(0,2) get the first two letters. so for example, "fr-BE" and "fr-CA" both become "fr"
 	langCode = navigator.language.substr(0, 2);
 	//alert("langCode is null");
-  console.log("langCode is null");
+  //console.log("langCode is null");
 }
 
 
 if (langs.includes(langCode)){
   $.getJSON('lang/' + langCode + '.json', translate);
-  console.log("langCode, "+langCode);
+  //console.log("langCode, "+langCode);
 }
 else{
   $.getJSON('lang/en.json', translate);
-  console.log("else");
+  //console.log("else");
 }
 
 
 function choose(choice) {
 	sessionStorage.setItem('splang', choice );
 	/*alert("You chossed " + sessionStorage.getItem('splang'));*/
-  console.log("set:",choice);
+  //console.log("set:",choice);
 	location.reload();
 }
