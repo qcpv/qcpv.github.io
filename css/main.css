@@ -1286,6 +1286,10 @@ td, th {
   padding-bottom: 70px;
 }
 
+.blockquote {
+  line-height: 1.6;
+}
+
 @media (max-width: 991px) {
   .technology-area-title h2 br {
     display: none;
