@@ -551,9 +551,14 @@ td, th {
   color: #fff;
 }
 
+.text-black-500 {
+  color: #000;
+  font-weight: 500;
+}
+
 .text-black-bold {
   color: #000;
-  font-weight: bold
+  font-weight: bold;
 }
 
 .transition {
@@ -1273,16 +1278,16 @@ td, th {
   margin-top: 30px;
 }
 
-.signle-service figcaption {
+.single-item-transparent figcaption {
   background: #fff;
   padding: 40px 20px;
 }
 
-.signle-service figcaption h5 {
+.single-item-transparent figcaption h5 {
   margin-bottom: 15px;
 }
 
-.signle-service figcaption p {
+.single-item-transparent figcaption p {
   margin-bottom: 30px;
 }
 
