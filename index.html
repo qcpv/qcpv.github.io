@@ -49,7 +49,7 @@
 	<!--
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
 	-->
-	<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:300,400,500,700|Noto+Sans+SC:300,400,500,700|Timmana" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500|Noto+Sans+SC:400,500|Timmana" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.typekit.net/rph3cof.css">
 	<!--
 			CSS
@@ -64,9 +64,11 @@
 -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
+	<!-- jquery -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<!-- lazy loading -->
+	<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
 </head>
-
 <body>
 	<div id="top"></div>
 	<!-- Start Header Area -->
@@ -173,7 +175,7 @@
 	<!-- Start Technology Area -->
 	<section id="technology" class="section-full">
 		<!-- Background Image-->
-		<div class="bg-img" style="background-image: url('./img/bg1d.jpg');">
+		<div class="bg-img lazyload" style="background-image: url('./img/bg1d_tn.jpg');" data-src="img/bg1d.jpg">
 			<div class="overlay"></div>
 		</div>
 		<!--Background Image -->
@@ -284,7 +286,7 @@
 	<!-- Start Performance Data Area -->
 	<section id="performance" class="section-full">
 		<!--Start of Background Image-->
-		<div class="bg-img" style="background-image: url('./img/cloudy.jpg');">
+		<div class="bg-img lazyload" style="background-image: url('./img/cloudy_tn.jpg');" data-src="img/cloudy.jpg">
 			<div class="overlay-2"></div>
 		</div>
 		<!--End of Background Image -->
@@ -384,7 +386,7 @@
 	<!-- Start products Area -->
 	<section id="products" class="section-full">
 		<!--Start of Background Image-->
-		<div class="bg-img" style="background-image: url('./img/bg-fea.jpg');">
+		<div class="bg-img lazyload" style="background-image: url('./img/bg-fea_tn.jpg');" data-src="img/bg-fea.jpg">
 			<div class="overlay-2"></div>
 		</div>
 		<!--End of Background Image -->
@@ -485,7 +487,7 @@
 	<!-- Start Contacts Area -->
 	<section id="contact" class="section-full">
 		<!-- Background Image-->
-		<div class="bg-img" style="background-image: url('./img/panel.png');">
+		<div class="bg-img lazyload" style="background-image: url('./img/panel_tn.png');" data-src="img/panel.png">
 			<div class="overlay"></div>
 		</div>
 		<!--Background Image -->
@@ -577,6 +579,7 @@
 	<script src="js/lang.js"></script>
 	<script src="js/hoverontouch.js"></script>
 	<script type="text/javascript">var HoverOnTouch = new HoverOnTouch();</script>
+	<script type="text/javascript">	$(function(){lazyload();});</script>
 </body>
 
 </html>

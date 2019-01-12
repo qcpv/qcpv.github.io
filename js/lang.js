@@ -21,7 +21,7 @@ if (langCode==null) {
 
 if (langs.includes(langCode)){
   $.getJSON('lang/' + langCode + '.json', translate);
-  console.log("langCode, "+langCode);
+  //console.log("langCode, "+langCode);
   if (langCode=='ja'){
     document.documentElement.style.setProperty('--main-font', "'Noto Sans SC', sans-serif");
     document.documentElement.style.setProperty('--title-font', "'Noto Sans SC', sans-serif");
@@ -36,7 +36,6 @@ if (langs.includes(langCode)){
   }else{
     document.documentElement.style.setProperty('--main-font', "'fira-sans', sans-serif");
     document.documentElement.style.setProperty('--title-font', "'abril-fatface', serif");
-    console.log("frfrfr");
   }
 }
 else{
