@@ -78,7 +78,7 @@
   ],
   "contacts:column2:title": "日本連絡事務所",
   "contacts:column2:text": ["京都, 京都府<br>", "日本"],
-  "contacts:column3:title": "携帯番号",
+  "contacts:column3:title": "携帯電話",
   "contacts:column3:text": ["Japan: ", "<a href='tel:00817041156337'>+81-70-4115-6337</a>"],
   "contacts:column4:title": "電子メール"
 }
