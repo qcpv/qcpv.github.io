@@ -21,7 +21,19 @@ if (langCode==null) {
 
 if (langs.includes(langCode)){
   $.getJSON('lang/' + langCode + '.json', translate);
-  //console.log("langCode, "+langCode);
+  console.log("langCode, "+langCode);
+  if (langCode=='ja'){
+    document.documentElement.style.setProperty('--main-font', "'Noto Sans SC', sans-serif");
+    document.documentElement.style.setProperty('--title-font', "'Noto Sans SC', sans-serif");
+    //console.log("font changed "+langCode);
+  }else if(langCode=='zh'){
+    document.documentElement.style.setProperty('--main-font', "'Noto Sans SC', sans-serif");
+    document.documentElement.style.setProperty('--title-font', "'Noto Sans SC', sans-serif");
+
+  }else if(langCode=='en' || langCode=='fr'){
+    document.documentElement.style.setProperty('--main-font', "'M PLUS 1p', sans-serif");
+    document.documentElement.style.setProperty('--title-font', "'Timmana', sans-serif");
+  }
 }
 else{
   $.getJSON('lang/en.json', translate);
