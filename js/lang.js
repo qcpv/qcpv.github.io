@@ -30,9 +30,13 @@ if (langs.includes(langCode)){
     document.documentElement.style.setProperty('--main-font', "'Noto Sans SC', sans-serif");
     document.documentElement.style.setProperty('--title-font', "'Noto Sans SC', sans-serif");
 
-  }else if(langCode=='en' || langCode=='fr'){
+  }else if(langCode=='en'){
     document.documentElement.style.setProperty('--main-font', "'M PLUS 1p', sans-serif");
     document.documentElement.style.setProperty('--title-font', "'Timmana', sans-serif");
+  }else{
+    document.documentElement.style.setProperty('--main-font', "'fira-sans', sans-serif");
+    document.documentElement.style.setProperty('--title-font', "'abril-fatface', serif");
+    console.log("frfrfr");
   }
 }
 else{

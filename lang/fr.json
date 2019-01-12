@@ -35,10 +35,10 @@
   "technology:column3:item2": "Blocs de construction fondamentaux qui dynamisent un bâtiment intelligent",
   "technology:column3:item3": "Données en temps réel pour une protection complète",
   "technology:column3:item4": "Intégration avec d'autres services",
-  "quote2:after-tech": "Découpler les énergies renouvelables de manière intermittente et peu rentable",
+  "quote2:after-tech:content": "Découpler les énergies renouvelables de manière intermittente et peu rentable",
   "quote2:after-tech:source":"",
   "performance:subtitle": "Performance",
-  "performance:title": "sélection de chiffres clés",
+  "performance:title": "Sélection de chiffres clés",
   "performance:chart1:text": "Efficacité de la conversion d'énergie lors de fortes pluies",
   "performance:chart2:text": "Efficacité de conversion d'énergie dans les conditions standard",
   "performance:chart3:value": "6.3 ct/kWh",
@@ -80,5 +80,5 @@
   "contacts:column3:title": "Mobile",
   "contacts:column3:text": ["Japon: ", "<a href='tel:00817041156337'>+81-70-4115-6337</a>"],
   "contacts:column4:title": "E-mail",
-  "copyright:text1": "Copyright &copy; 2019 Hainan Putian Solar Energy Construction Co.,Ltd. Tous les droits sont réservés."
+  "copyright:text1": "Copyright &copy; 2019 Hainan Putian Solar Energy Construction Co.,Ltd., tous droits réservés."
 }
