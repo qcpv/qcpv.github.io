@@ -45,7 +45,7 @@
   "performance:chart4:text": "内部量子效率",
   "performance:chart1:footnote": ["* 上网电价 (元/kWh): ",
     "<br />", "水电: 0.2~0.4; ", "火电: 0.3~0.5; ",
-    "核电: 0.43; ","风电:0.51~0.61"
+    "核电: 0.43; ","风电: 0.51~0.61;","光伏: 0.65~0.85."
   ],
   "quote3:after-perf:content": "景日之光反燭人，則景在日與人之間。",
   "quote3:after-perf:source": "墨子 卷十 經說下",
