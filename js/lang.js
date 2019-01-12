@@ -25,6 +25,9 @@ if (langs.includes(langCode)){
   if (langCode=='ja'){
     document.documentElement.style.setProperty('--main-font', "'Noto Sans SC', sans-serif");
     document.documentElement.style.setProperty('--title-font', "'Noto Sans SC', sans-serif");
+    document.getElementsByClassName("content-t1")[0].setAttribute("data-src","/img/t1_ja.png");
+    document.getElementsByClassName("content-t3")[0].setAttribute("data-src","/img/int_ja.png");
+    //document.getElementById("content-t1").setAttribute("data-src","/img/t1_ja.png");
     //console.log("font changed "+langCode);
   }else if(langCode=='zh'){
     document.documentElement.style.setProperty('--main-font', "'Noto Sans SC', sans-serif");
