@@ -306,10 +306,11 @@
 		</div>
 		<div class="container pt-50">
 			<div class="row">
+				<!-- start of item 1-->
 				<div class="col-lg-3 col-sm-6 d-flex justify-content-center">
 					<div class="list text-center">
 						<div class="list-item">
-							<div class="progressBar progressBar--animateText1" data-progress="16">
+							<div id="feature-1" class="progressBar progressBar--animateNone1" data-progress="16">
 								<svg class="progressBar-contentCircle" viewBox="0 0 200 200">
 									<circle transform="rotate(-90, 100, 100)" class="progressBar-background" cx="100" cy="100" r="95" />
 									<circle transform="rotate(-90, 100, 100)" class="progressBar-circle" cx="100" cy="100" r="95" />
@@ -320,10 +321,20 @@
 						<h4 class="text-center" tkey="performance:chart1:text">Energy conversion efficiency during heavy rains</h4>
 					</div>
 				</div>
+				<script>
+					$(function() {
+						if ($(window).width() > 767) {
+							$("#feature-1").removeClass("");
+							$("#feature-1").addClass("progressBar--animateText1")
+						}
+					});
+				</script>
+				<!-- end of item 1-->
+				<!-- start of item 2-->
 				<div class="col-lg-3 col-sm-6 d-flex justify-content-center">
 					<div class="list text-center">
 						<div class="list-item">
-							<div class="progressBar progressBar--animateText2" data-progress="24.3">
+							<div id="feature-2" class="progressBar progressBar--animateNone2" data-progress="24.3">
 								<svg class="progressBar-contentCircle" viewBox="0 0 200 200">
 									<circle transform="rotate(-90, 100, 100)" class="progressBar-background" cx="100" cy="100" r="95" />
 									<circle transform="rotate(-90, 100, 100)" class="progressBar-circle" cx="100" cy="100" r="95" />
@@ -334,10 +345,20 @@
 						<h4 class="text-center" tkey="performance:chart2:text">Energy conversion efficiency under the standard condition</h4>
 					</div>
 				</div>
+				<script>
+					$(function() {
+						if ($(window).width() > 767) {
+							$("#feature-2").removeClass("progressBar--animateNone2");
+							$("#feature-2").addClass("progressBar--animateText2")
+						}
+					});
+				</script>
+				<!-- end of item 2-->
+				<!-- start of item 3-->
 				<div class="col-lg-3 col-sm-6 d-flex justify-content-center">
 					<div class="list text-center">
 						<div class="list-item">
-							<div class="progressBar progressBar--animateNone1" data-progress="100">
+							<div id="feature-3" class="progressBar progressBar--animateNone3" data-progress="100">
 								<svg class="progressBar-contentCircle" viewBox="0 0 200 200">
 									<circle transform="rotate(-90, 100, 100)" class="progressBar-background" cx="100" cy="100" r="95" />
 									<circle transform="rotate(-90, 100, 100)" class="progressBar-circle" cx="100" cy="100" r="95" />
@@ -348,10 +369,12 @@
 						<h4 class="text-center" tkey="performance:chart3:text">Annually average cost in Kyoto(battery included)*</h4>
 					</div>
 				</div>
+				<!-- end of item 3-->
+				<!-- start of item 4-->
 				<div class="col-lg-3 col-sm-6 d-flex justify-content-center">
 					<div class="list text-center">
 						<div class="list-item">
-							<div class="progressBar progressBar--animateText3" data-progress="99">
+							<div id="feature-4" class="progressBar progressBar--animateNone4" data-progress="99">
 								<svg class="progressBar-contentCircle" viewBox="0 0 200 200">
 									<circle transform="rotate(-90, 100, 100)" class="progressBar-background" cx="100" cy="100" r="95" />
 									<circle transform="rotate(-90, 100, 100)" class="progressBar-circle" cx="100" cy="100" r="95" />
@@ -362,6 +385,15 @@
 						<h4 class="text-center" tkey="performance:chart4:text">Inner quantum efficiency</p>
 					</div>
 				</div>
+				<script>
+					$(function() {
+						if ($(window).width() > 767) {
+							$("#feature-4").removeClass("progressBar--animateNone4");
+							$("#feature-4").addClass("progressBar--animateText3")
+						}
+					});
+				</script>
+				<!-- end of item 4-->
 			</div>
 			<p tkey="performance:chart1:footnote">
 				* :cost of electricity in Japan per 2014 (yen/kWh):
@@ -581,8 +613,11 @@
 	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.js"></script>-->
 	<script src="js/main.js"></script>
 	<script src="js/lang.js"></script>
+		<!--
 	<script src="js/hoverontouch.js"></script>
+
 	<script type="text/javascript">var HoverOnTouch = new HoverOnTouch();</script>
+-->
 	<script type="text/javascript">	$(function(){lazyload();});</script>
 </body>
 

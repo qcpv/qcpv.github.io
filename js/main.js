@@ -191,10 +191,8 @@ $(document).ready(function() {
     animateText: false
   });
 
-  $('.progressBar--animateNone2').bekeyProgressbar({
-    animate: false,
-    animateText: false
-  });
+  if ($(window).width() > 767) {
+
 
   $('.progressBar--animateCircle').bekeyProgressbar({
     animate: true,
@@ -216,5 +214,22 @@ $(document).ready(function() {
   });
 
   $('.progressBar--animateAll').bekeyProgressbar();
+}else{
+
+    $('.progressBar--animateNone2').bekeyProgressbar({
+      animate: false,
+      animateText: false
+    });
+
+    $('.progressBar--animateNone3').bekeyProgressbar({
+      animate: false,
+      animateText: false
+    });
+
+    $('.progressBar--animateNone4').bekeyProgressbar({
+      animate: false,
+      animateText: false
+    });
+}
 
 })
