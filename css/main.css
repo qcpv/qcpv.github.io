@@ -1437,7 +1437,7 @@ td, th {
 }
 
 .single-filter-content.content-t1 {
-  background: url(../img/t1_tn.jpg) no-repeat center center/cover;
+  background: url(../img/t1_tn.png) no-repeat center center/cover;
   background-size: 100% auto;
   /*この場合は高さが自動設定*/
 }
@@ -1449,41 +1449,41 @@ td, th {
 }
 
 .single-filter-content.content-t3 {
-  background: url(../img/int_tn.jpg) no-repeat center center/cover;
+  background: url(../img/int_tn.png) no-repeat center center/cover;
   background-size: 100% auto;
   /*この場合は高さが自動設定*/
 }
 
 .single-filter-content.content-1 {
-  background: url(../img/iBuilding1.jpg) no-repeat center center/cover;
+  background: url(../img/iBuilding1_tn.jpg) no-repeat center center/cover;
 }
 
 .single-filter-content.content-2 {
-  background: url(../img/iBuilding2.jpg) no-repeat center center/cover;
+  background: url(../img/iBuilding2_tn.jpg) no-repeat center center/cover;
 }
 
 .single-filter-content.content-3 {
-  background: url(../img/multi1.jpg) no-repeat center center/cover;
+  background: url(../img/multi1_tn.jpg) no-repeat center center/cover;
 }
 
 .single-filter-content.content-4 {
-  background: url(../img/multi2.jpg) no-repeat center center/cover;
+  background: url(../img/multi2_tn.jpg) no-repeat center center/cover;
 }
 
 .single-filter-content.content-5 {
-  background: url(../img/many1.jpg) no-repeat center center/cover;
+  background: url(../img/many1_tn.jpg) no-repeat center center/cover;
 }
 
 .single-filter-content.content-6 {
-  background: url(../img/Chlorophyll.jpg) no-repeat center center/cover;
+  background: url(../img/Chlorophyll_tn.jpg) no-repeat center center/cover;
 }
 
 .single-filter-content.content-7 {
-  background: url(../img/charging-stand.jpg) no-repeat center center/cover;
+  background: url(../img/charging-stand_tn.jpg) no-repeat center center/cover;
 }
 
 .single-filter-content.content-8 {
-  background: url(../img/film.png) no-repeat center center/cover;
+  background: url(../img/film_tn.png) no-repeat center center/cover;
   background-size: auto 100%;
   /*full height*/
 }
