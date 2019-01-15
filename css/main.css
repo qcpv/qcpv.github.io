@@ -1116,7 +1116,8 @@ td, th {
 
 .bm-video-back-overlay {
   height: 100%;
-  top: 0
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 .bm-video-wrapper-size-fix {

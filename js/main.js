@@ -190,7 +190,7 @@ $(document).ready(function() {
     animate: false,
     animateText: false
   });
-
+/*
   if ($(window).width() > 767) {
 
 
@@ -214,7 +214,7 @@ $(document).ready(function() {
   });
 
   $('.progressBar--animateAll').bekeyProgressbar();
-}else{
+}else{*/
 
     $('.progressBar--animateNone2').bekeyProgressbar({
       animate: false,
@@ -230,6 +230,6 @@ $(document).ready(function() {
       animate: false,
       animateText: false
     });
-}
+//}
 
 })
