@@ -1033,7 +1033,7 @@ td, th {
     position: absolute;
     top: 40px;
     right: 0;
-    background: rgba(19, 143, 194,0.9);
+    background: rgba(6,173,255,0.7);
     padding: 30px 20px;
   }
 
@@ -1057,10 +1057,10 @@ td, th {
 
 .is-sticky .sticky-header {
   background: rgba(6,173,255,0.7);
-  background: -moz-linear-gradient(linear, left top, left bottom, from(rgba(6,173,255,0.7)), to(rgba(7,210,205,0.7)));
-  background: -webkit-linear-gradient(linear, left top, left bottom, from(rgba(6,173,255,0.7)), to(rgba(7,210,205,0.7)));
-  background: linear-gradient(to bottom, rgba(6,173,255,0.7) 0%, rgba(7,210,205,0.7) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#06adff', endColorstr='#07d2cd', GradientType=0);
+  background: -moz-linear-gradient(linear, left top, left bottom, from(rgba(7,210,205,0.7)), to(rgba(6,173,255,0.7)));
+  background: -webkit-linear-gradient(linear, left top, left bottom, from(rgba(7,210,205,0.7)), to(rgba(6,173,255,0.7)));
+  background: linear-gradient(to bottom, rgba(7,210,205,0.7) 0%, rgba(6,173,255,0.7) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#07d2cd', endColorstr='#06adff', GradientType=0);
   /*opacity: 0.7;*/
 }
 
@@ -1086,11 +1086,12 @@ td, th {
 
 .banner-area {
   /*background: url(../img/banner.jpg) no-repeat center center/cover;
-  background: #75cbe7;*/
-  background: -moz-linear-gradient(linear, left top, left bottom, from(rgba(117, 203, 231, 0.95) 0%), to(rgba(19, 143, 194, 0.95) 100%));
-  background: -webkit-linear-gradient(linear, left top, left bottom, from(rgba(117, 203, 231, 0.95) 0%), to(rgba(19, 143, 194, 0.95) 100%));
-  background: linear-gradient(to bottom, rgba(117, 203, 231, 0.95) 0%, rgba(19, 143, 194, 0.95) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#75cbe7', endColorstr='#138fc2', GradientType=0);
+  background: #75cbe7;
+  from(rgba(117, 203, 231, 0.95) 0%), to(rgba(19, 143, 194, 0.95) 100%));*/
+  background: -moz-linear-gradient(linear, left top, left bottom, from(rgba(7,210,205,0.9) 0%), to(rgba(6,173,255,0.9) 100%));
+  background: -webkit-linear-gradient(linear, left top, left bottom, from(rgba(7,210,205,0.9) 0%), to(rgba(6,173,255,0.9) 100%));
+  background: linear-gradient(to bottom, rgba(7,210,205,0.9) 0%, rgba(6,173,255,0.9) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#07d2cd', endColorstr='#06adff', GradientType=0);
   /*opacity: 0.8;
   z-index: -99;*/
   /*Note: using z-index parameter would case links inside this area not clickable*/
@@ -1462,7 +1463,7 @@ td, th {
 
 .single-item-transparent .icon span:hover {
   /*color: #fff;*/
-  color: #ff6600;
+  color: #fbc3b7;
 }
 
 .single-item-transparent .icon {
@@ -1472,8 +1473,8 @@ td, th {
 
 .single-item-transparent .icon span {
   font-size: 48px;
-  /*#00ff8c*/
-  color: #00ffff;
+  /*#00ff8c #b7effb*/
+  color: 	#b7effb;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1481,7 +1482,8 @@ td, th {
 }
 
 .quote-area {
-  background: #3d4191;
+  /*#3d4191;*/
+  background: #4549a3;
   padding: 60px 0;
 }
 
