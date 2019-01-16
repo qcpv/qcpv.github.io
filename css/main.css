@@ -942,9 +942,9 @@ td, th {
 .lang-menu button {
   display: inline-block;
   color: rgba(255, 255, 255, 0.9);
-  margin: 0 20px;
+  margin: 0 5px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'M PLUS 1p', sans-serif;
 }
 
@@ -969,8 +969,12 @@ td, th {
   position: absolute;
   top: 40px;
   right: 0;
-  background: rgba(19, 143, 194,0.9);
+  background: rgba(6,173,255,0.7);
+  /*rgba(19, 143, 194,0.9)*/
   padding: 30px 20px;
+  border: 0 !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
 }
 
 .dropdown-item:hover, .dropdown-item:focus {
@@ -1052,15 +1056,25 @@ td, th {
 }
 
 .sticky-header {
-  padding: 15px 0;
+  /*padding of the top menu. was 15px (top&bottom)*/
+  padding: 5px 0;
 }
 
+/*
 .is-sticky .sticky-header {
   background: rgba(6,173,255,0.7);
   background: -moz-linear-gradient(linear, left top, left bottom, from(rgba(7,210,205,0.7)), to(rgba(6,173,255,0.7)));
   background: -webkit-linear-gradient(linear, left top, left bottom, from(rgba(7,210,205,0.7)), to(rgba(6,173,255,0.7)));
   background: linear-gradient(to bottom, rgba(7,210,205,0.7) 0%, rgba(6,173,255,0.7) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#07d2cd', endColorstr='#06adff', GradientType=0);
+}*/
+
+.is-sticky .sticky-header {
+  background: rgba(6,173,255,0.7);
+  background: -moz-linear-gradient(linear, left top, left bottom, from(rgba(6,173,255,1) 0%), to(rgba(255,129,0,0) 100%));
+  background: -webkit-linear-gradient(linear, left top, left bottom, from(rgba(6,173,255,1) 0%), to(rgba(255,129,0,0) 100%));
+  background: linear-gradient(to bottom, rgba(6,173,255,1) 0%, rgba(255,129,0,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#06adff', endColorstr='#ff8100', GradientType=0);
   /*opacity: 0.7;*/
 }
 
@@ -1463,7 +1477,7 @@ td, th {
 
 .single-item-transparent .icon span:hover {
   /*color: #fff;*/
-  color: #fbc3b7;
+  color: 	#5588ff;
 }
 
 .single-item-transparent .icon {
@@ -1474,7 +1488,7 @@ td, th {
 .single-item-transparent .icon span {
   font-size: 48px;
   /*#00ff8c #b7effb*/
-  color: 	#b7effb;
+  color: 		#77aaff;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1483,7 +1497,7 @@ td, th {
 
 .quote-area {
   /*#3d4191;*/
-  background: #4549a3;
+  background: #4549A3;
   padding: 60px 0;
 }
 
