@@ -129,8 +129,9 @@
 		</div>
 	</section>
 	<script>
-		$(function() {
+		$(window).on('load',function() {
 			if ($(window).width() > 767) {
+
 				var videoele="<div id='opening' class='bm-video-back'></div>";
 				var videofile="<video playsinline='true' loop='true' autoplay='true' muted='true'>\
 					<source src='videos/SolarPanels-5858.mp4' /></video>";
