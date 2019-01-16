@@ -21,15 +21,26 @@ body {
   margin-left: auto;
   width: 100%;
 }
-.video1{
-  background-color: rgba(51, 204, 255, 0.3);
+
+.video-wrapper{
+  width: 100%;
+  max-width: 100%;
+  padding: 56.25% 0 0 0; /* 100%/16*9 = 56.25% = Aspect ratio 16:9 */
+  overflow: hidden;
+  border: 0;
 }
+
+.video-wrapper video {
+  max-width: 90%;
+  height: 80vh;
+  top: 0;
+  left: 0;
+}
+
 .caption1{
   background-color: rgba(51, 204, 255, 0.3);
 }
-.video2{
-  background-color: rgba(51, 153, 255, 0.3);
-}
+
 .caption2{
   background-color: rgba(51, 153, 255, 0.3);
 }
@@ -67,8 +78,8 @@ body {
 
 <body style="background-color:rgba(0, 255, 255, 0.4);">
   <div class="grid-container">
-    <div class="video1">
-      <video width="400" controls muted>
+    <div class="video-wrapper video1" style="background-color: rgba(51, 204, 255, 0.3)">
+      <video controls muted>
         <source src="videos/indoors.mp4" type="video/mp4">
         <source src="videos/indoors.ogg" type="video/ogg">
         ご使用のブラウザは、このビデオで使用している機能の一部に対応していない可能性があります。
@@ -80,8 +91,8 @@ body {
         Visually confirm our quantum light concentration effect in an indoor environment.
       </p>
     </div>
-    <div class="video2">
-      <video width="400" controls muted>
+    <div class="video-wrapper video2" style="background-color: rgba(51, 153, 255, 0.3)">
+      <video controls muted>
         <source src="videos/outdoors.mp4" type="video/mp4">
         <source src="videos/outdoors.ogg" type="video/ogg">
         ご使用のブラウザは、このビデオで使用している機能の一部に対応していない可能性があります。
