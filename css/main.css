@@ -1053,6 +1053,10 @@ td, th {
     right: 0;
     vertical-align: baseline;
   }
+
+  .is-sticky .sticky-header {
+    background: rgba(6,173,255,0.7) !important;
+  }
 }
 
 .sticky-header {
