@@ -104,79 +104,61 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
+})({"js/lang.js":[function(require,module,exports) {
+var langs = ['ja', 'en', 'zh', 'fr'];
+var langCode = sessionStorage.getItem('splang');
+var langJS = null;
 
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
+var translate = function translate(jsdata) {
+  $("[tkey]").each(function (index) {
+    var strTr = jsdata[$(this).attr('tkey')];
+    $(this).html(strTr);
+  });
+};
+
+if (langCode == null) {
+  //see here for a list of possible values https://stackoverflow.com/questions/5580876/navigator-language-list-of-all-languages
+  //substr(0,2) get the first two letters. so for example, "fr-BE" and "fr-CA" both become "fr"
+  langCode = navigator.language.substr(0, 2); //alert("langCode is null");
+  //console.log("langCode is null");
+}
+
+if (langs.includes(langCode)) {
+  //$.getJSON('lang/' + langCode + '.json', translate);
+  $.getJSON('./lang/ja.json', translate); //console.log("langCode, "+langCode);
+
+  if (langCode == 'ja') {
+    $.getJSON('./lang/ja.json', translate);
+    document.documentElement.style.setProperty('--main-font', "'Noto Sans SC', sans-serif");
+    document.documentElement.style.setProperty('--title-font', "'Noto Sans SC', sans-serif");
+    document.getElementById("content-t1").setAttribute("data-src", "./img/t1_ja.png");
+    document.getElementById("content-t3").setAttribute("data-src", "./img/int_ja.png"); //document.getElementById("content-t1").setAttribute("data-src","/img/t1_ja.png");
+    //console.log("font changed "+langCode);
+  } else if (langCode == 'zh') {
+    $.getJSON('./lang/zh.json', translate);
+    document.documentElement.style.setProperty('--main-font', "'Noto Sans SC', sans-serif");
+    document.documentElement.style.setProperty('--title-font', "'Noto Sans SC', sans-serif");
+  } else if (langCode == 'en') {
+    $.getJSON('./lang/en.json', translate);
+    document.documentElement.style.setProperty('--main-font', "'M PLUS 1p', sans-serif");
+    document.documentElement.style.setProperty('--title-font', "'Timmana', sans-serif");
+  } else {
+    $.getJSON('./lang/fr.json', translate);
+    document.documentElement.style.setProperty('--main-font', "'fira-sans', sans-serif");
+    document.documentElement.style.setProperty('--title-font', "'abril-fatface', serif");
   }
-
-  return bundleURL;
+} else {
+  $.getJSON('./lang/en.json', translate); //console.log("else");
 }
 
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp):\/\/[^)\n]+/g);
+function choose(choice) {
+  sessionStorage.setItem('splang', choice);
+  /*alert("You chossed " + sessionStorage.getItem('splang'));*/
+  //console.log("set:",choice);
 
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-
-  return '/';
+  location.reload();
 }
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
-  };
-
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-
-    cssTimeout = null;
-  }, 50);
-}
-
-module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/linearicons.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./../fonts/Linearicons-Free.eot":[["Linearicons-Free.0c8b98a8.eot","fonts/Linearicons-Free.eot"],"fonts/Linearicons-Free.eot"],"./../fonts/Linearicons-Free.woff2":[["Linearicons-Free.e6b1f9a6.woff2","fonts/Linearicons-Free.woff2"],"fonts/Linearicons-Free.woff2"],"./../fonts/Linearicons-Free.woff":[["Linearicons-Free.3f06c510.woff","fonts/Linearicons-Free.woff"],"fonts/Linearicons-Free.woff"],"./../fonts/Linearicons-Free.ttf":[["Linearicons-Free.4bf4d851.ttf","fonts/Linearicons-Free.ttf"],"fonts/Linearicons-Free.ttf"],"./../fonts/Linearicons-Free.svg":[["Linearicons-Free.876baf3b.svg","fonts/Linearicons-Free.svg"],"fonts/Linearicons-Free.svg"],"_css_loader":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -345,4 +327,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/lang.js"], null)
+//# sourceMappingURL=/lang.map

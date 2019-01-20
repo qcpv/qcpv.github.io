@@ -125,30 +125,30 @@ if (langCode == null) {
 
 if (langs.includes(langCode)) {
   //$.getJSON('lang/' + langCode + '.json', translate);
-  $.getJSON('lang/ja.json', translate); //console.log("langCode, "+langCode);
+  $.getJSON('./lang/ja.json', translate); //console.log("langCode, "+langCode);
 
   if (langCode == 'ja') {
-    $.getJSON('lang/ja.json', translate);
+    $.getJSON('./lang/ja.json', translate);
     document.documentElement.style.setProperty('--main-font', "'Noto Sans SC', sans-serif");
     document.documentElement.style.setProperty('--title-font', "'Noto Sans SC', sans-serif");
-    document.getElementsByClassName("content-t1")[0].setAttribute("data-src", "/img/t1_ja.png");
-    document.getElementsByClassName("content-t3")[0].setAttribute("data-src", "/img/int_ja.png"); //document.getElementById("content-t1").setAttribute("data-src","/img/t1_ja.png");
+    document.getElementById("content-t1").setAttribute("data-src", "./img/t1_ja.png");
+    document.getElementById("content-t3").setAttribute("data-src", "./img/int_ja.png"); //document.getElementById("content-t1").setAttribute("data-src","/img/t1_ja.png");
     //console.log("font changed "+langCode);
   } else if (langCode == 'zh') {
-    $.getJSON('lang/zh.json', translate);
+    $.getJSON('./lang/zh.json', translate);
     document.documentElement.style.setProperty('--main-font', "'Noto Sans SC', sans-serif");
     document.documentElement.style.setProperty('--title-font', "'Noto Sans SC', sans-serif");
   } else if (langCode == 'en') {
-    $.getJSON('lang/en.json', translate);
+    $.getJSON('./lang/en.json', translate);
     document.documentElement.style.setProperty('--main-font', "'M PLUS 1p', sans-serif");
     document.documentElement.style.setProperty('--title-font', "'Timmana', sans-serif");
   } else {
-    $.getJSON('lang/fr.json', translate);
+    $.getJSON('./lang/fr.json', translate);
     document.documentElement.style.setProperty('--main-font', "'fira-sans', sans-serif");
     document.documentElement.style.setProperty('--title-font', "'abril-fatface', serif");
   }
 } else {
-  $.getJSON('lang/en.json', translate); //console.log("else");
+  $.getJSON('./lang/en.json', translate); //console.log("else");
 }
 
 function choose(choice) {
@@ -185,7 +185,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64911" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55972" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
