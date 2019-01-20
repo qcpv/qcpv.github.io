@@ -106,7 +106,14 @@
 	<!-- End Header Area -->
 	<!-- Start Banner Area -->
 	<section id="banner" class="banner-area relative">
-		<!--will add an video playing element if width > 767 px-->
+		<div id="opening" class="bm-video-back">
+			<video playsinline="true" loop="true" autoplay="true" muted="true">
+				<source src="videos/SolarPanels-5858.mp4" type="video/mp4">
+			</video>
+			<div class="bm-video-back-overlay">
+			</div>
+		</div>
+		<!--will add an video playing element if width> 767 px-->
 		<div class="container">
 			<div class="row fullscreen justify-content-center align-items-center">
 				<div class="col-lg-8">
@@ -121,28 +128,35 @@
 		</div>
 	</section>
 	<script>
-		$(window).on('load', function() {
-			if ($(window).width() > 767) {
-
-				var videoele = "<div id='opening' class='bm-video-back'></div>";
-				var videofile = "<video playsinline='true' loop='true' autoplay='true' muted='true'>\
-					<source src='videos/SolarPanels-5858.mp4' /></video>";
-				var videooverlay = "<div class='bm-video-back-overlay'></div>";
-				/*
-					"<div class='bm-video-back'>\
-						<video playsinline='true' loop='true' autoplay='true' muted='true'>\
-							<source src='videos/SolarEnergy-922.mp4' />\
-						</video>\
-						<div class='bm-video-back-overlay' style='background: rgba(0, 0, 0, 0.3);'>\
-						</div>\
-					</div>";
-					*/
-				$("#banner").prepend(videoele);
-				$("#opening").append(videofile);
-				$("#opening").append(videooverlay);
-				/*console.log('test@video');*/
-			}
-		});
+	if (document.documentElement.clientWidth < 768){
+		var banner = document.getElementById("banner");
+		banner.removeChild(banner.childNodes[0]);
+	};
+	/*
+	I do not know why this does not play the video inserted
+		window.onload = function() {
+			// 新しい div 要素を作成します
+			var videoWrapper = document.createElement("div");
+			videoWrapper.setAttribute("id", "opening");
+			videoWrapper.setAttribute("class", "bm-video-back");
+			var videoFile = document.createElement("video");
+			videoFile.setAttribute("playsinline", "true");
+			videoFile.setAttribute("loop", "true");
+			videoFile.setAttribute("autoplay", "true");
+			videoFile.setAttribute("muted", "true");
+			var videoOverlay = document.createElement("div");
+			videoOverlay.setAttribute("class", "bm-video-back-overlay");
+			// DOM に新しく作られた要素とその内容を追加します
+			videoWrapper.appendChild(videoFile);
+			videoWrapper.appendChild(videoOverlay);
+			var videoSource = document.createElement("source");
+			videoSource.src = 'videos/SolarPanels-5858.mp4';
+			videoSource.type = "video/mp4";
+			videoFile.appendChild(videoSource);
+			var currentDiv = document.getElementById("banner");
+			currentDiv.insertBefore(videoWrapper, currentDiv.childNodes[0]);
+		};
+		*/
 	</script>
 	<!-- End Banner Area -->
 	<!-- Start Motivation Area -->

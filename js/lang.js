@@ -20,9 +20,11 @@ if (langCode==null) {
 
 
 if (langs.includes(langCode)){
-  $.getJSON('lang/' + langCode + '.json', translate);
+  //$.getJSON('lang/' + langCode + '.json', translate);
+  $.getJSON('lang/ja.json',translate);
   //console.log("langCode, "+langCode);
   if (langCode=='ja'){
+    $.getJSON('lang/ja.json',translate);
     document.documentElement.style.setProperty('--main-font', "'Noto Sans SC', sans-serif");
     document.documentElement.style.setProperty('--title-font', "'Noto Sans SC', sans-serif");
     document.getElementsByClassName("content-t1")[0].setAttribute("data-src","/img/t1_ja.png");
@@ -30,13 +32,16 @@ if (langs.includes(langCode)){
     //document.getElementById("content-t1").setAttribute("data-src","/img/t1_ja.png");
     //console.log("font changed "+langCode);
   }else if(langCode=='zh'){
+    $.getJSON('lang/zh.json',translate);
     document.documentElement.style.setProperty('--main-font', "'Noto Sans SC', sans-serif");
     document.documentElement.style.setProperty('--title-font', "'Noto Sans SC', sans-serif");
 
   }else if(langCode=='en'){
+    $.getJSON('lang/en.json',translate);
     document.documentElement.style.setProperty('--main-font', "'M PLUS 1p', sans-serif");
     document.documentElement.style.setProperty('--title-font', "'Timmana', sans-serif");
   }else{
+    $.getJSON('lang/fr.json',translate);
     document.documentElement.style.setProperty('--main-font', "'fira-sans', sans-serif");
     document.documentElement.style.setProperty('--title-font', "'abril-fatface', serif");
   }
