@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
+<html>
 
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -58,11 +59,13 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- jquery -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<!-- lazy loading -->
 	<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/lang.js"></script>
 </head>
 
 <body>
@@ -128,35 +131,35 @@
 		</div>
 	</section>
 	<script>
-	if (document.documentElement.clientWidth < 768){
-		var banner = document.getElementById("banner");
-		banner.removeChild(banner.childNodes[0]);
-	};
-	/*
-	I do not know why this does not play the video inserted
-		window.onload = function() {
-			// 新しい div 要素を作成します
-			var videoWrapper = document.createElement("div");
-			videoWrapper.setAttribute("id", "opening");
-			videoWrapper.setAttribute("class", "bm-video-back");
-			var videoFile = document.createElement("video");
-			videoFile.setAttribute("playsinline", "true");
-			videoFile.setAttribute("loop", "true");
-			videoFile.setAttribute("autoplay", "true");
-			videoFile.setAttribute("muted", "true");
-			var videoOverlay = document.createElement("div");
-			videoOverlay.setAttribute("class", "bm-video-back-overlay");
-			// DOM に新しく作られた要素とその内容を追加します
-			videoWrapper.appendChild(videoFile);
-			videoWrapper.appendChild(videoOverlay);
-			var videoSource = document.createElement("source");
-			videoSource.src = 'videos/SolarPanels-5858.mp4';
-			videoSource.type = "video/mp4";
-			videoFile.appendChild(videoSource);
-			var currentDiv = document.getElementById("banner");
-			currentDiv.insertBefore(videoWrapper, currentDiv.childNodes[0]);
+		if (document.documentElement.clientWidth < 768) {
+			var banner = document.getElementById("banner");
+			banner.removeChild(banner.childNodes[0]);
 		};
-		*/
+		/*
+		I do not know why this does not play the video inserted
+			window.onload = function() {
+				// 新しい div 要素を作成します
+				var videoWrapper = document.createElement("div");
+				videoWrapper.setAttribute("id", "opening");
+				videoWrapper.setAttribute("class", "bm-video-back");
+				var videoFile = document.createElement("video");
+				videoFile.setAttribute("playsinline", "true");
+				videoFile.setAttribute("loop", "true");
+				videoFile.setAttribute("autoplay", "true");
+				videoFile.setAttribute("muted", "true");
+				var videoOverlay = document.createElement("div");
+				videoOverlay.setAttribute("class", "bm-video-back-overlay");
+				// DOM に新しく作られた要素とその内容を追加します
+				videoWrapper.appendChild(videoFile);
+				videoWrapper.appendChild(videoOverlay);
+				var videoSource = document.createElement("source");
+				videoSource.src = 'videos/SolarPanels-5858.mp4';
+				videoSource.type = "video/mp4";
+				videoFile.appendChild(videoSource);
+				var currentDiv = document.getElementById("banner");
+				currentDiv.insertBefore(videoWrapper, currentDiv.childNodes[0]);
+			};
+			*/
 	</script>
 	<!-- End Banner Area -->
 	<!-- Start Motivation Area -->
@@ -624,8 +627,6 @@
 	<script src="js/jquery.ajaxchimp.min.js"></script>
 	<script src="js/jquery.sticky.js"></script>
 	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.js"></script>-->
-	<script src="js/main.js"></script>
-	<script src="js/lang.js"></script>
 	<script type="text/javascript">
 		$(function() {
 			lazyload();
