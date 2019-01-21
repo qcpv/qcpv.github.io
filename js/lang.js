@@ -8,7 +8,7 @@ var translate = function(jsdata) {
     var strTr = jsdata[$(this).attr('tkey')];
     $(this).html(strTr);
   });
-}
+};
 
 if (langCode==null) {
   //see here for a list of possible values https://stackoverflow.com/questions/5580876/navigator-language-list-of-all-languages
@@ -16,7 +16,7 @@ if (langCode==null) {
 	langCode = navigator.language.substr(0, 2);
 	//alert("langCode is null");
   //console.log("langCode is null");
-}
+};
 
 
 if (langs.includes(langCode)){
@@ -48,7 +48,7 @@ if (langs.includes(langCode)){
 else{
   $.getJSON('/lang/en.json', translate);
   //console.log("else");
-}
+};
 
 
 function choose(choice) {

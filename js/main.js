@@ -184,3 +184,7 @@ $(document).ready(function() {
 //}
 
 })
+/*
+$(document).ready(function() {
+  document.getElementById("lang_ja").onclick = choose('ja');
+})*/
