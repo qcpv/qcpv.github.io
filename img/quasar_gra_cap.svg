@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1807px" height="434px" viewBox="0 0 1807 434" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>quasar 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FF5349" offset="0%"></stop>
+            <stop stop-color="#F4C430" offset="50.3661974%"></stop>
+            <stop stop-color="#966FD6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text id="quasar" fill-opacity="0.9" fill="url(#linearGradient-1)" font-family="Tele-Marines" font-size="300" font-weight="normal">
+            <tspan x="0" y="199">quasar</tspan>
+        </text>
+        <text id="Quantum-Solar-Array" font-family="RobotoCondensed-BoldItalic, Roboto Condensed" font-size="135" font-style="italic" font-weight="bold" fill="#656565" fill-opacity="0.7">
+            <tspan x="1" y="401">Quantum Solar Array Renaissance</tspan>
+        </text>
+    </g>
+</svg>
