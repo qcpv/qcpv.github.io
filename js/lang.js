@@ -37,12 +37,12 @@ if (langs.includes(langCode)){
 
   }else if(langCode=='en'){
     $.getJSON('/lang/en.json',translate);
-    document.documentElement.style.setProperty('--main-font', "'M PLUS 1p', sans-serif");
+    document.documentElement.style.setProperty('--main-font', "'Ping Regular', 'M PLUS 1p', sans-serif");
     document.documentElement.style.setProperty('--title-font', "'Timmana', sans-serif");
   }else{
     $.getJSON('/lang/fr.json',translate);
-    document.documentElement.style.setProperty('--main-font', "'fira-sans', sans-serif");
-    document.documentElement.style.setProperty('--title-font', "'abril-fatface', serif");
+    document.documentElement.style.setProperty('--main-font', "'Ping Regular', 'M PLUS 1p', sans-serif");
+    document.documentElement.style.setProperty('--title-font', "'Timmana', sans-serif");
   }
 }
 else{
