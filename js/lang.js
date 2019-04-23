@@ -26,6 +26,7 @@ if (langs.includes(langCode)){
     $.getJSON('/lang/ja.json',translate);
     document.documentElement.style.setProperty('--main-font', "'Noto Sans SC', sans-serif");
     document.documentElement.style.setProperty('--title-font', "'Noto Sans SC', sans-serif");
+    document.documentElement.style.setProperty('--h1-font', "'Noto Sans SC', sans-serif");
     document.getElementById("content-t1").setAttribute("data-src","/img/t1_ja.png");
     document.getElementById("content-t3").setAttribute("data-src","/img/int_ja.png");
     //document.getElementById("content-t1").setAttribute("data-src","/img/t1_ja.png");
@@ -34,15 +35,18 @@ if (langs.includes(langCode)){
     $.getJSON('/lang/zh.json',translate);
     document.documentElement.style.setProperty('--main-font', "'Noto Sans SC', sans-serif");
     document.documentElement.style.setProperty('--title-font', "'Noto Sans SC', sans-serif");
+    document.documentElement.style.setProperty('--h1-font', "'Noto Sans SC', sans-serif");
 
   }else if(langCode=='en'){
     $.getJSON('/lang/en.json',translate);
     document.documentElement.style.setProperty('--main-font', "'Ping Regular', 'M PLUS 1p', sans-serif");
-    document.documentElement.style.setProperty('--title-font', "'Ping Heavy', sans-serif");
+    document.documentElement.style.setProperty('--title-font', "'Ping Bold', sans-serif");
+    document.documentElement.style.setProperty('--h1-font', "'Ping Black Italic', sans-serif");
   }else{
     $.getJSON('/lang/fr.json',translate);
     document.documentElement.style.setProperty('--main-font', "'Ping Regular', 'M PLUS 1p', sans-serif");
-    document.documentElement.style.setProperty('--title-font', "'Ping Heavy', sans-serif");
+    document.documentElement.style.setProperty('--title-font', "'Ping Bold', sans-serif");
+    document.documentElement.style.setProperty('--h1-font', "'Ping Black Italic', sans-serif");
   }
 }
 else{
