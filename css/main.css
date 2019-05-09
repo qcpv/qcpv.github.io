@@ -582,6 +582,16 @@ td, th {
   padding: 75px 0;
 }
 
+.section-thin {
+  padding: 25px 0;
+}
+
+.section-video {
+  padding: 19vh 0 10vh 0;
+  position: relative;
+  min-height: 95vh;
+}
+
 .flex {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1507,4 +1517,8 @@ footer .footer-nav li a:hover {
 
 .footer-bottom .footer-text a:hover {
   color: #00ff8c;
+}
+
+.bottom-twenty {
+  padding: 20cm;
 }
