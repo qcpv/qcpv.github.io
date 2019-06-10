@@ -42,7 +42,7 @@
   "performance:chart2:text": "Energy conversion efficiency under the standard condition",
   "performance:chart3:value": "3.5 yen",
   "performance:chart3:text": "Annually average cost in Kyoto(per kWh)*",
-  "performance:chart4:text": "Inner quantum efficiency",
+  "performance:chart4:text": "Quantum efficiency",
   "performance:chart1:footnote": ["* cost of electricity in Japan per 2014 (yen/kWh): ",
     "<br />", "Nuclear energy: 10.1; ", "Fossil fuel: 12.3 (Coal), 13.72 (LNG); ",
     "Solar energy (household): 29.4."

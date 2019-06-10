@@ -42,7 +42,7 @@
   "performance:chart2:text": "標準状態でのエネルギー効率",
   "performance:chart3:value": "3.5 円",
   "performance:chart3:text": "京都での年間平均コスト(kWh)*",
-  "performance:chart4:text": "内部量子効率",
+  "performance:chart4:text": "量子効率",
   "performance:chart1:footnote": ["* 発電コスト(2014年モデル、円/kWh): ",
     "<br />", "原子力: 10.1; ", "火力: 12.3 (石炭), 13.72 (LNG); ",
     "太陽光 (住宅): 29.4."
