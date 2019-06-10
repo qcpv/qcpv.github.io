@@ -41,7 +41,7 @@
   "performance:title": "部分基础指标数据",
   "performance:chart1:text": "重阴雨天发电效率",
   "performance:chart2:text": "标准条件下发电效率",
-  "performance:chart3:value": "0.18元",
+  "performance:chart3:value": "0.26元",
   "performance:chart3:text": "海口市年平均度电成本*",
   "performance:chart4:text": "量子效率",
   "performance:chart1:footnote": ["* 上网电价 (元/kWh): ",
