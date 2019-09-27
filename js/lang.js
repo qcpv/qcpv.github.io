@@ -30,7 +30,7 @@ if (langs.includes(langCode)){
     document.documentElement.style.setProperty('--h1-font', "'Noto Sans SC', sans-serif");
     document.getElementById("content-t1").setAttribute("data-src","/img/t1_ja.png");
     document.getElementById("content-t3").setAttribute("data-src","/img/int_ja.png");
-    brochure.setAttribute('href', 'Pamphlet.pdf');
+    brochure.setAttribute('href', 'Pamphlet(ja).pdf');
     brochure.setAttribute('download', '量子集光発電がもたらす新世界');
     //document.getElementById("content-t1").setAttribute("data-src","/img/t1_ja.png");
     //console.log("font changed "+langCode);
@@ -39,22 +39,22 @@ if (langs.includes(langCode)){
     document.documentElement.style.setProperty('--main-font', "'Noto Sans SC', sans-serif");
     document.documentElement.style.setProperty('--title-font', "'Noto Sans SC', sans-serif");
     document.documentElement.style.setProperty('--h1-font', "'Noto Sans SC', sans-serif");
-    brochure.setAttribute('href', 'Flyer.pdf');
-    brochure.setAttribute('download', 'Smart Infrastructure');
+    brochure.setAttribute('href', 'Pamphlet(en).pdf');
+    brochure.setAttribute('download', 'About QUASAR');
   }else if(langCode=='en'){
     $.getJSON('/lang/en.json',translate);
     document.documentElement.style.setProperty('--main-font', "'Ping Regular', 'M PLUS 1p', sans-serif");
     document.documentElement.style.setProperty('--title-font', "'Ping Bold', sans-serif");
     document.documentElement.style.setProperty('--h1-font', "'Ping Black Italic', sans-serif");
-    brochure.setAttribute('href', 'Flyer.pdf');
-    brochure.setAttribute('download', 'Smart Infrastructure');
+    brochure.setAttribute('href', 'Pamphlet(en).pdf');
+    brochure.setAttribute('download', 'About QUASAR');
   }else{
     $.getJSON('/lang/fr.json',translate);
     document.documentElement.style.setProperty('--main-font', "'Ping Regular', 'M PLUS 1p', sans-serif");
     document.documentElement.style.setProperty('--title-font', "'Ping Bold', sans-serif");
     document.documentElement.style.setProperty('--h1-font', "'Ping Black Italic', sans-serif");
-    brochure.setAttribute('href', 'Flyer.pdf');
-    brochure.setAttribute('download', 'Smart Infrastructure');
+    brochure.setAttribute('href', 'Pamphlet(en).pdf');
+    brochure.setAttribute('download', 'About QUASAR');
     
   }
 }
