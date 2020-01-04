@@ -765,9 +765,9 @@ td, th {
 .primary-btn {
   line-height: 40px;
   padding: 0 40px;
-  border-radius: 20px;
+  border-radius: 25px;
   background: transparent;
-  border: 1px solid #00ff8c;
+  border: 3px solid #00ff8c;
   color: #222222;
   display: inline-block;
   font-weight: 600;

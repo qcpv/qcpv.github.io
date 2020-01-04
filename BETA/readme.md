@@ -4,3 +4,83 @@ This project aims to create a new homepage for QUASAR.
 
 ## Technology to be used
 TBD
+
+
+# Typography
+
+## font size
+
+* main text 15-25
+* subheadline 32
+* head line 60 90
+
+## line-spacing
+
+120%~150% of font size
+
+## characters per line
+
+45-90 characters
+
+### recommended sans-serif google fonts
+
+* open sans
+* lato
+* raleway
+* monsterrat
+* PT sans
+
+### recommended serif google fonts
+
+* Cardo
+* Merriweather
+* PT serif
+
+## meaning of colors
+
+* Red is a great color to use when power, passion, strength and excitement want to be transmitted. Brighter tones are more energetic and darker shades are more powerful and elegant.
+* Orange draws attention without being as overpowering as red. It means cheerfulness and creativity. Orange can be associated with friendliness, confidence, and courage.
+* Yellow is energetic and gives the feeling of happiness and liveliness. Also, it associates with curiosity, intelligence, brightness, etc.
+* Green is the color of harmony, nature, life and health. Also, it is often associated with money. In design, green can have a balancing and harmonizing effect.
+* Blue means patience, peace, trustworthiness, and stability. It is one of the most beloved colors, especially by men. It is associated with professionalism, trust and honor. That's actually why the biggest social networks use blue.
+* Purple is traditionally associated with power, nobility and wealth. In your design, purple can give a sense of wisdom, royalty, nobility, luxury, and mystery.
+* Pink expresses romance, passivity, care, peace, affection, etc.
+* Brown is the color of relaxation and confidence. Brown means earthiness, nature, durability, comfort, and reliability.
+
+## Working with images:
+
+* put text directly on the image
+* overlay the image with colour
+    ```
+     .darken {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(YOUR IMAGE HERE);
+    }
+    Example: http://jsfiddle.net/drpak8vy/1/
+    ```
+* put your text in a box
+    ```
+    .text-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: inline;
+    padding: 10px;
+    }
+    Example: http://jsfiddle.net/qg83m36p/
+    ```
+* blur the image
+* the floor fade
+    ```
+    .floor-fade {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6) ), url(YOUR IMAGE HERE);
+    }
+    Example: http://jsfiddle.net/gRzPF/409/
+    ```
+
+
+## white space
+
+* define where you want your audience to look
+* establish a flow that corresponds to your content's message
+* use whitespace to build that flow
+
+steal like an artist
