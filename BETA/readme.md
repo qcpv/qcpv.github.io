@@ -1,12 +1,26 @@
-# Operation accelerated plasma
+
+
+# Operation Aurora
 
 This project aims to create a new homepage for QUASAR.
 
 ## Technology to be used
-React
+React with tailwind
 Gatsby
 TBD
 
+## Conception
+Ultra-low cost all-weather/reliable renewable energy
+=> smart infrastructure, intelligent XXX
+
+
+
+https://themeforest.net/item/renergy-alternative-renewable-energy-html-pack/24953504
+
+## STEPS:
+* Design search for adobe xd landing page template
+* Prototype
+* Realization using react
 
 # Typography
 
